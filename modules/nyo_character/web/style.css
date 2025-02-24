@@ -1,0 +1,394 @@
+#nui-nyo_character {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#nui-nyo_character * {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  /*font-family: 'Montserrat', sans-serif;*/
+}
+
+#nui-nyo_character mainCharacter {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  display: flex;
+  transform: translate(0,-50%);
+}
+
+#nui-nyo_character mainCharacter aside {
+  padding: 5px;
+  display: flex;
+  margin-right: 20px;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-right: 2px dashed #c4c4c4;
+}
+
+#nui-nyo_character mainCharacter aside .category {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+#nui-nyo_character mainCharacter aside .category img {
+  max-width: 50%;
+}
+
+#nui-nyo_character mainCharacter aside .category:last-child {
+  margin-bottom: 0;
+}
+
+#nui-nyo_character mainCharacter section {
+  overflow: auto;
+  padding-right: 10px;
+  max-height: 470px;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item {
+  color: #fff;
+  display: flex;
+  width: 350px;
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item:last-child {
+  margin: 0;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .title {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  flex-direction: column;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .title span {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .title small {
+  font-size: 8px;
+  opacity: .5;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item small {
+  font-size: 8px;
+  opacity: .5;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .actions {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  transform: translate(0,-50%);
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .actions .btn {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  display: flex;
+  margin-right: 5px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .99);
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7px 2px;
+  justify-content: center;
+  background: #0075DE;
+  border-radius: 0 0 5px 5px;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .content .item {
+  width: 61px;
+  height: 61px;
+  display: flex;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .65);
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .content-select .item {
+  width: 61px;
+  height: 61px;
+  display: flex;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .65);  
+  background-size: 100%;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .content-select .item-color {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  background-color: saddlebrown;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.65);
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .content-select .item-range {
+  width: 90%;
+  display: flex;
+  margin-top: 7px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+#nui-nyo_character mainCharacter section .dropdown-item .content-select .item-range input{
+  margin-top: 5px;
+  border-radius: 30px;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .content-select .item:last-child {
+  margin: 0;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .content-select .item img {
+  max-width: 50%;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .content-select,
+#nui-nyo_character mainCharacter section .dropdown-item .content-input {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: left;
+  border-radius: 0 0 5px 5px;
+  /*justify-content: space-between;*/
+  background: rgba(0, 0, 0, 0.65);
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row{
+  flex-wrap: wrap;
+  flex: 2 0 21%; /* explanation below */
+  flex-direction: row;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .hair-item,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .eyesBrow-item,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .beard-item,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .chest-item,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .blush-item,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .lipstick-item,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .blemishes-item,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .ageing-item,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .complexion-item,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .sundamage-item,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .freckles-item,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .makeup-item
+{
+  filter: grayscale(1);
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .hair-itemActive,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .eyesBrow-itemActive,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .beard-itemActive,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .chest-itemActive,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .blush-itemActive,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .lipstick-itemActive,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .blemishes-itemActive,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .ageing-itemActive,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .complexion-itemActive,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .sundamage-itemActive,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .freckles-itemActive,
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .makeup-itemActive
+{
+  filter: grayscale(0) !important;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .flex-row .parent-item span{
+  font-size: 10px;
+  margin-top: 50px;
+  text-shadow: 0px 0px 5px #000000;
+}
+
+
+#nui-nyo_character mainCharacter section .dropdown-item .content-select .option {
+  width: 50%;
+  padding: 10px;
+  margin: 0 5px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.2);  
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .content-select .option svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#nui-nyo_character mainCharacter section .dropdown-item .content-input input {
+  border: 0;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  color: #fff;
+  padding-left: 10px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#nui-nyo_character mainCharacter .btns-pagination {
+  position: absolute;
+  width: 100%;
+  bottom: -45px;
+  display: flex;
+  right: 10px;
+  justify-content: flex-end;
+}
+
+/* ================================================================= */
+/* Character Rotation                                                */
+/* ================================================================= */
+
+#nui-nyo_character mainCharacter .btns-pagination {
+    align-items: center;
+}
+
+#nui-nyo_character mainCharacter .btns-pagination input {
+    margin: 0 !important;
+    outline: none;
+    padding: 0;
+    width: 145px;
+    height: 6px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.562);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 0%, color-stop(0%, #4060AA), color-stop(0%, #4060AA));
+    background-image: -webkit-linear-gradient(#4060AA, #4060AA);
+    background-image: -moz-linear-gradient(#4060AA, #4060AA);
+    background-image: -o-linear-gradient(#4060AA, #4060AA);
+    background-image: linear-gradient(#4060AA, #4060AA);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+#nui-nyo_character mainCharacter .btns-pagination input::-webkit-slider-runnable-track {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+}
+
+#nui-nyo_character mainCharacter .btns-pagination input::-moz-range-track {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+#nui-nyo_character mainCharacter .btns-pagination input::-moz-focus-outer {
+    border: 0;
+}
+
+#nui-nyo_character mainCharacter .btns-pagination input::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+    border: 0;
+    background: #fff;
+    border-radius: 100%;
+    -webkit-appearance: none;
+    box-shadow: 0 0 1px 0px rgba(0,0,0,0.1);
+}
+
+#nui-nyo_character mainCharacter .btns-pagination input::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border: 0;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 0 1px 0px rgba(0,0,0,0.1);
+}
+
+/* ================================================================= */
+/* Character Rotation                                                */
+/* ================================================================= */
+
+#nui-nyo_character mainCharacter .btns-pagination button {
+  border: 0;
+  width: 100px;
+  height: 30px;
+  color: #ccc;
+  font-size: 10px;
+  margin-left: 5px;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  transition: all .3s;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+#nui-nyo_character mainCharacter .btns-pagination button:hover {
+  color: #fff;
+  background-color: #0075DE;
+}
+
+#nui-nyo_character .char-active {
+  background: #0075DE !important;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.400);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.400);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #0075DE;
+  box-shadow: 0 0 0.1rem transparent, inset 0 0 0.1rem transparent, 0 0 .7rem #0075DE, inset 0 0 .7rem #0075DE
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <!--link rel="stylesheet" type="text/css" href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css"-->
+    <link rel="stylesheet" href="../modules/nyo_bennys/web/style.css">
+</head>
+
+<moduleBennys>
+    <body>
+        <div id="mainBennys">
+            <header>
+                <small lang="ui-title"></small>
+                <span id="bennys-title" lang="ui-subtitle"></span>
+            </header>
+            <div class="flexBennys">
+                <aside id="bennys-aside">
+                    <div class="category flex-centerBennys" onclick="setHomeMenu()"><i class="fas fa-home"></i></div>
+                </aside>
+                <section>
+                    <div class="title">
+                        <div class="cart flex-centerBennys" onclick="setHomeMenu()"><i class="fal fa-shopping-cart"></i></div>
+                        <div class="cart-info">
+                            <span>Bem vindo,</span>
+                            <small>seu carrinho: <span id="bennys-cart-price">R$ 00,00</span></small>
+                        </div>
+                        <!-- <div class="search">
+                            <small>pesquisar</small>
+                            <input placeholder="numero" id="searchBennys" onkeyup="searchBennys()">
+                        </div> -->
+                    </div>
+                    <div class="shop-content" id="bennys-shop-content"></div>
+                    <div class="shop-footer">
+                        <div class="input-footer"></div>
+                        <div class="action-buy" style="right: -40px;position: relative;" onclick="FetchData('bennysSetFocus', {});">
+                            <div class="info-footer styleAugBennys flex-centerBennys" onclick="">cam(h)</div>
+                            <button class="flex-centerBennys"><i class="fa fa-video-camera" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="action-buy" style="right: -20px;position: relative;" id="bennys-return-button">
+                            <div class="info-footer styleAugBennys flex-centerBennys" onclick="">voltar</div>
+                            <button class="flex-centerBennys"><i class="fas fa-chevron-left"></i></button>
+                        </div>
+                        <div class="action-buy">
+                            <div class="info-footer styleAugBennys flex-centerBennys" onclick="FetchData('bennysSave',{})">finalizar</div>
+                            <button class="flex-centerBennys"><i class="fal fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</moduleBennys>
+
+<script src="../modules/nyo_bennys/web/script.js"></script>
+
+</html>

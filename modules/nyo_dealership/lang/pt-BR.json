@@ -1,0 +1,11 @@
+{
+    "onPlayerBuyVehicle": "Você comprou o veículo $name por $$price com sucesso. O veículo já se encontra na sua garagem.",
+    "onPlayerSellVehicle": "O veículo $name com sucesso. Você já recebeu $$price na sua conta.",
+    "unableToSellVehicle": "Não foi possível efetuar a venda do veículo.",
+    "vehicleOutOfStock": "Veículo sem estoque.",
+    "unableToBuyVehicle": "Não foi possível efetuar a compra do veículo.",
+    "insufficientMoney": "Você não possui dinheiro suficiente.",
+    "invalidRequestParams": "Aconteceu um erro desconhecido.",
+    "dealershipNotFound": "Concessionária não encontrada.",
+    "vehicleNotFound": "Veículo não encontrado na concessionária."
+}

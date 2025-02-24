@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../modules/nyo_deathsystem/web/style.css">
+</head>
+<body>
+  
+  <mainDeath>
+    <img src="../modules/nyo_deathsystem/web/assets/img/heart.png">
+    <div class="title">
+      <div class="mark" lang="ui-title-1"></div>
+      <span lang="ui-title-2"></span>
+    </div>
+    <p id="deathText" lang="ui-subtitle"> </p>
+    <div class="btns">
+      <button id="reviveButton" type="button" disabled onclick="deathRevive()" ><span lang="ui-revive-button-1"></span></button>
+      <button id="giveUpButton" type="button" disabled onclick="deathGiveUp()"><span lang="ui-giveup-button"></span></button>
+    </div>
+  </mainDeath>
+  <script src="../modules/nyo_deathsystem/web/script.js"></script>
+</body>
+</html>

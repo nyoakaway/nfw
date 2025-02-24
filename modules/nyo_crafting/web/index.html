@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../modules/nyo_crafting/web/reset.css">
+    <link rel="stylesheet" href="../modules/nyo_crafting/web/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>nyo_crafting</title>
+</head>
+<body>
+    <div class="crafting-UI">
+        <div class="container-crafting">
+            <div class="container-select-crafting">
+                <div class="container-select-header-crafting">
+                    <div class="container-select-header-infos-crafting">
+                        <small id="crafting-ui-title1" lang="ui-title1">Craft System</small>
+                        <p id="crafting-ui-title2" lang="ui-title2">Crafts Disponiveis</p>
+                    </div>
+                    <div class="container-select-header-search-crafting">
+                        <button><i class="fas fa-search"></i></button>
+                        <input type="text" lang="ui-search" placeholder="Pesquisa" id="crafting-ui-search">
+                    </div>
+                </div>
+                <div class="container-select-items-crafting">
+                    <div class="container-select-items-buttons-crafting">
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <ul class="container-select-items-list-crafting">
+                        <li class="container-select-items-list-item-crafting">
+                            <img src="../modules/nyo_crafting/web/assets/divingsuit.png">
+                            <div>
+                                <p>Traje de mergulho</p>
+                                <small><i class="far fa-clock"></i> 20 Segundos</small>
+                            </div>
+                        </li>
+                        <li class="container-select-items-list-item-crafting">
+                            <img src="../modules/nyo_crafting/web/assets/divingsuit.png">
+                            <div>
+                                <p>Traje de mergulho</p>
+                                <small><i class="far fa-clock"></i> 20 Segundos</small>
+                            </div>
+                        </li>
+                        <li class="container-select-items-list-item-crafting">
+                            <img src="../modules/nyo_crafting/web/assets/divingsuit.png">
+                            <div>
+                                <p>Traje de mergulho</p>
+                                <small><i class="far fa-clock"></i> 20 Segundos</small>
+                            </div>
+                        </li>
+                        <li class="container-select-items-list-item-crafting">
+                            <img src="../modules/nyo_crafting/web/assets/divingsuit.png">
+                            <div>
+                                <p>Traje de mergulho</p>
+                                <small><i class="far fa-clock"></i> 20 Segundos</small>
+                            </div>
+                        </li>
+                        <li class="container-select-items-list-item-crafting">
+                            <img src="../modules/nyo_crafting/web/assets/divingsuit.png">
+                            <div>
+                                <p>Traje de mergulho</p>
+                                <small><i class="far fa-clock"></i> 20 Segundos</small>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-selected-crafting">
+                <div class="container-selected-header-crafting">
+                    <div class="container-selected-header-infos-crafting">
+                        <p>Traje de mergulho</p>
+                        <small>Categoria utilitarios</small>
+                    </div>
+                        <img id="header-item-crafting" src="../modules/nyo_crafting/web/assets/divingsuit.png">
+                        <img id="header-stars-crafting" src="../modules/nyo_crafting/web/assets/stars.png">
+                </div>
+                <div class="container-selected-content-crafting">
+                    <div class="container-selected-content-title-crafting">
+                        <p id="crafting-ui-container-title" lang="ui-container-title">Recursos</p>
+                        <small id="crafting-ui-container-subtitle" lang="ui-container-subtitle">para produção</small>
+                    </div>
+                    <ul class="container-selected-content-resources-crafting">
+                        <li class="container-selected-content-resources-item-crafting">
+                            <img src="../modules/nyo_crafting/web/assets/divingsuit.png">
+                            <p>1/10 Borracha</p>
+                        </li>
+                    </ul>
+                    <div class="container-selected-content-finalize-crafting">
+                        <div class="container-selected-content-finalize-infos-crafting">
+                            <div class="container-selected-content-finalize-infos-inputs-crafting">
+                                <input class="container-selected-content-finalize-infos-number-crafting" id="crafting-amount" disabled type="number" placeholder="0">
+                                <input class="container-selected-content-finalize-infos-range-crafting" id="range-value" onInput="changeValue(this.value)" min="0" max="50"type="range">
+                            </div>
+                            <p class="container-selected-content-finalize-infos-time-crafting"><i class="far fa-clock"></i> 20 Segundos</p>
+                            <div class="container-selected-content-finalize-infos-buttons-crafting">
+                                <!-- <button class="container-selected-content-finalize-button-cancel-crafting">CANCELAR</button> -->
+                                <button 
+                                    class="container-selected-content-finalize-button-create-crafting"
+                                    onclick="craftingStartProducing()"
+                                    id="crafting-ui-produce-button"
+                                    lang="ui-produce-button">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../modules/nyo_crafting/web/script.js"></script>
+</body>
+</html>

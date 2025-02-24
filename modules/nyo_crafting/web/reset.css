@@ -1,0 +1,47 @@
+#nui-nyo_crafting > html, #nui-nyo_crafting > body, #nui-nyo_crafting > div, #nui-nyo_crafting > span, #nui-nyo_crafting > applet, #nui-nyo_crafting > object, #nui-nyo_crafting > iframe,
+#nui-nyo_crafting > h1, #nui-nyo_crafting > h2, #nui-nyo_crafting > h3, #nui-nyo_crafting > h4, #nui-nyo_crafting > h5, #nui-nyo_crafting > h6, #nui-nyo_crafting > p, #nui-nyo_crafting > blockquote, #nui-nyo_crafting > pre,
+#nui-nyo_crafting > a, #nui-nyo_crafting > abbr, #nui-nyo_crafting > acronym, #nui-nyo_crafting > address, #nui-nyo_crafting > big, #nui-nyo_crafting > cite, #nui-nyo_crafting > code,
+#nui-nyo_crafting > del, #nui-nyo_crafting > dfn, #nui-nyo_crafting > em, #nui-nyo_crafting > img, #nui-nyo_crafting > ins, #nui-nyo_crafting > kbd, #nui-nyo_crafting > q, #nui-nyo_crafting > s, #nui-nyo_crafting > samp,
+#nui-nyo_crafting > small, #nui-nyo_crafting > strike, #nui-nyo_crafting > strong, #nui-nyo_crafting > sub, #nui-nyo_crafting > sup, #nui-nyo_crafting > tt, #nui-nyo_crafting > var,
+#nui-nyo_crafting > b, #nui-nyo_crafting > u, #nui-nyo_crafting > i, #nui-nyo_crafting > center,
+#nui-nyo_crafting > dl, #nui-nyo_crafting > dt, #nui-nyo_crafting > dd, #nui-nyo_crafting > ol, #nui-nyo_crafting > ul, #nui-nyo_crafting > li,
+#nui-nyo_crafting > fieldset, #nui-nyo_crafting > form, #nui-nyo_crafting > label, #nui-nyo_crafting > legend,
+#nui-nyo_crafting > table, #nui-nyo_crafting > caption, #nui-nyo_crafting > tbody, #nui-nyo_crafting > tfoot, #nui-nyo_crafting > thead, #nui-nyo_crafting > tr, #nui-nyo_crafting > th, #nui-nyo_crafting > td,
+#nui-nyo_crafting > article, #nui-nyo_crafting > aside, #nui-nyo_crafting > canvas, #nui-nyo_crafting > details, #nui-nyo_crafting > embed, 
+#nui-nyo_crafting > figure, #nui-nyo_crafting > figcaption, #nui-nyo_crafting > footer, #nui-nyo_crafting > header, #nui-nyo_crafting > hgroup, 
+#nui-nyo_crafting > menu, #nui-nyo_crafting > nav, #nui-nyo_crafting > output, #nui-nyo_crafting > ruby, #nui-nyo_crafting > section, #nui-nyo_crafting > summary,
+#nui-nyo_crafting > time, #nui-nyo_crafting > mark, #nui-nyo_crafting > audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+#nui-nyo_crafting > article, #nui-nyo_crafting > aside, #nui-nyo_crafting > details, #nui-nyo_crafting > figcaption, #nui-nyo_crafting > figure, 
+#nui-nyo_crafting > footer, #nui-nyo_crafting > header, #nui-nyo_crafting > hgroup, #nui-nyo_crafting > menu, #nui-nyo_crafting > nav, section {
+	display: block;
+}
+#nui-nyo_crafting > body {
+	line-height: 1;
+}
+#nui-nyo_crafting > ol, ul {
+	list-style: none;
+}
+#nui-nyo_crafting > blockquote, q {
+	quotes: none;
+}
+#nui-nyo_crafting > blockquote:before,#nui-nyo_crafting >  blockquote:after,
+#nui-nyo_crafting > q:before, q:after {
+	content: '';
+	content: none;
+}
+#nui-nyo_crafting table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#nui-nyo_crafting  button, #nui-nyo_crafting input {
+    outline:none;
+    border:none;
+}

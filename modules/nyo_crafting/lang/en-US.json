@@ -1,0 +1,11 @@
+{
+    "insufficientItems": "Not enough items!",
+    "insufficientSpaceInInventory": "You don't have space in your backpack!",
+    "ui-title1": "Craft System",
+    "ui-title2": "Available recipes",
+    "ui-search": "Search",
+    "ui-produce-button": "Produce",
+    "ui-container-title": "Required",
+    "ui-container-subtitle": "resources",
+    "ui-seconds": "Seconds"
+}

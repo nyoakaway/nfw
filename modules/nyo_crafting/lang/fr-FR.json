@@ -1,0 +1,11 @@
+{
+    "insufficientItems": "Pas assez d'objets!",
+    "insufficientSpaceInInventory": "Vous n'avez pas de place dans votre sac à dos !",
+    "ui-title1": "Système d'artisanat",
+    "ui-title2": "Recettes disponibles",
+    "ui-search": "Rechercher",
+    "ui-produce-button": "Produire",
+    "ui-container-title": "Obligatoire",
+    "ui-container-subtitle": "ressources",
+    "ui-seconds": "Secondes"
+}

@@ -1,0 +1,89 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #282828;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(-50%,0);
+}
+
+main img {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+main .title {
+  display: flex;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+main .title .mark {
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #0075DE;
+}
+
+main p {
+  color: #fff;
+  font-size: 12px;
+  max-width: 400px;
+}
+
+main .btns {
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+}
+
+b {
+  color: #0075DE;
+}
+
+main .btns button {
+  border: 0;
+  outline: none;
+  width: 120px;
+  height: 40px;
+  font-size: 10px;
+  margin: 0 5px;
+  color: #fff;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+main .btns button:last-child {
+  background-color: #c82626;
+}

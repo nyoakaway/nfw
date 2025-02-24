@@ -1,0 +1,502 @@
+moduleDealership html,
+moduleDealership body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+moduleDealership .allnuiConce {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  transform: translate(0, -50%);
+}
+
+moduleDealership * {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+moduleDealership mainConce {
+  position: relative;
+  height: 250px;
+  display: flex;
+  margin: 0 80px;
+  flex-direction: column;
+}
+
+moduleDealership mainConce .title {
+  position: absolute;
+  top: -55px;
+  left: -20px;
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+moduleDealership mainConce .title small {
+  opacity: .5;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+moduleDealership mainConce .title .search {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  display: flex;
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 10px;
+  align-items: center;
+}
+
+moduleDealership mainConce .title .search .icon {
+  background-color: #0075DE;
+  padding: 8px 10px;
+  margin-right: 2px;
+  border-radius: 5px;
+}
+
+moduleDealership mainConce .title .search input {
+  border: 0;
+  padding: 0;
+  width: 140px;
+  outline: none;
+  color: #fff;
+  height: 28px;
+  margin-left: 5px;
+  border-radius: 4px;
+  padding-left: 10px;
+  border: 2px solid #0076de6b;
+  background-color: transparent;
+}
+
+moduleDealership mainConce .title .search input::placeholder {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+moduleDealership mainConce menu {
+  height: 100%;
+  display: flex;
+}
+
+moduleDealership mainConce menu aside {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  padding-right: 25px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 2px dashed rgba(255, 255, 255, 0.397);
+  overflow: auto;
+}
+
+moduleDealership mainConce menu aside .item {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: all .3s;
+  border-radius: 10px;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.311);
+  min-height: 50px;
+}
+
+moduleDealership mainConce .active {
+  background-color: #0075DE !important;
+}
+
+moduleDealership mainConce menu aside .item:hover {
+  color: #000;
+  background-color: #0075DE;
+}
+
+moduleDealership mainConce menu aside .item img {
+  max-width: 50%;
+}
+
+moduleDealership mainConce menu section {
+  position: relative;
+  height: 250px;
+  width: 450px;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-auto-rows: min-content;
+}
+
+moduleDealership mainConce menu section .item {
+  position: relative;
+  opacity: .5;
+  width: 200px;
+  height: 80px;
+  display: flex;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  transition: all .3s;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.311);
+}
+
+moduleDealership mainConce menu section .active {
+  opacity: 1;
+  background-color: #0075DE;
+}
+
+moduleDealership mainConce menu section .active::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(86.63deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 117, 222, 0) 129.98%);
+}
+
+moduleDealership mainConce menu section .item:hover {
+  opacity: 1;
+  background-color: #0075DE;
+}
+
+moduleDealership mainConce menu section .item img {
+  position: relative;
+  top: 5px;
+  left: -5px;
+  z-index: 101;
+  max-width: 35%;
+  transform: scaleX(-1);
+}
+
+moduleDealership mainConce menu section .item .item-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ffff;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: right;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+moduleDealership mainConce menu section .item .item-info small {
+  opacity: .5;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+moduleDealership mainConce menu section .item:last-child {
+  margin: 0;
+}
+
+/*------------------------------------------*/
+
+moduleDealership mainConceMeio {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  width: 550px;
+  height: 190px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  transform: translate(-50%, 0);
+}
+
+moduleDealership mainConceMeio header {
+  color: #fff;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+
+moduleDealership mainConceMeio header .price {
+  position: relative;
+  top: -5px;
+  font-weight: 500;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+}
+
+moduleDealership mainConceMeio header .price .prefix {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  margin-right: 7px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #30b106;
+}
+
+moduleDealership mainConceMeio header .btns {
+  display: flex;
+  align-items: center;
+}
+
+moduleDealership mainConceMeio header button {
+  position: relative;
+  outline: none;
+  border: 0;
+  width: 35px;
+  color: #fff;
+  height: 35px;
+  margin: 0 5px;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  border-radius: 100%;
+  transition: all .3s;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+moduleDealership mainConceMeio header button .toltip {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  opacity: 0;
+  padding: 5px 7px;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  border-radius: 30px;
+  text-transform: uppercase;
+  background-color: #0075DE;
+  transform: translate(-50%, 0);
+}
+
+moduleDealership mainConceMeio header button:hover .toltip {
+  opacity: 1;
+}
+
+moduleDealership mainConceMeio header button .toltip::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  bottom: -9px;
+  transform: translate(-50%, 0);
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+
+  border-top: 9px solid #0075DE;
+}
+
+moduleDealership mainConceMeio header button:hover {
+  border: 1px solid rgb(189, 189, 189);
+  background-color: #0075DE;
+}
+
+moduleDealership mainConceMeio header h1 {
+  font-size: 22px;
+  margin: 0;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+moduleDealership mainConceMeio header small {
+  position: relative;
+  top: -5px;
+  opacity: .5;
+}
+
+moduleDealership mainConceMeio section {
+  display: flex;
+  padding: 0 25px;
+  flex-direction: column;
+}
+
+moduleDealership mainConceMeio section .column {
+  display: grid;
+  color: #fff;
+  grid-gap: 10px;
+  grid-template-rows: repeat(2, 60px);
+  grid-template-columns: repeat(2, 250px);
+}
+
+moduleDealership mainConceMeio section .column .rowDS {
+  position: relative;
+  height: 100px;
+  display: flex;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+moduleDealership mainConceMeio section .column .rowDS .bar {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  margin-top: 5px;
+  margin-left: -5px;
+  align-items: center;
+}
+
+moduleDealership mainConceMeio section .column .rowDS small {
+  position: absolute;
+  right: 10px;
+}
+
+moduleDealership mainConceMeio section .column .rowDS .bar .shape {
+  width: 25px;
+  height: 100%;
+  margin-right: -5px;
+  background: rgba(0, 0, 0, 0.34);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+moduleDealership mainConceMeio section .column .rowDS .bar .active {
+  background: #69F339;
+}
+
+
+moduleDealership ::-webkit-scrollbar {
+  width: 0;
+}
+
+@media only screen and (max-width: 1366px) {
+  moduleDealership mainConce {
+    zoom: .8;
+  }
+
+  moduleDealership mainConceMeio {
+    zoom: .7;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  moduleDealership mainConce {
+    zoom: .7;
+  }
+
+  moduleDealership mainConceMeio {
+    zoom: .6;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+moduleDealership #concealert {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+moduleDealership #concealert * {
+    outline: none;
+    list-style: none;
+    user-select: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+moduleDealership #concealert b {
+    color: #fff;
+}
+
+moduleDealership #concealert notifyJob {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    transform: translate(0%,-50%);
+    color: #fff;
+}
+
+moduleDealership #concealert notifyJob .notifyJob {
+    position: relative;
+    width: 300px;
+    padding: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 2px dashed #4060aa88;
+}
+
+moduleDealership #concealert notifyJob .notifyJob::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    width: 100px;
+    height: 50px;
+    z-index: 101;
+    transform: rotate(-500deg);
+    background-color: rgba(199, 199, 199, 0.100);
+}
+
+/*
+===============================
+    NOTIFY GLOBAIS
+===============================
+*/
+
+moduleDealership #concealert .notifyJob:last-child {margin: 0;}
+moduleDealership #concealert .contentJob {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(199, 199, 199, 0.300);
+}
+moduleDealership #concealert .contentJob .titleJob {
+    width: 100%;
+    display: flex;
+    padding: 5px 0;
+    font-size: 12px;
+    padding-left: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #132651;
+}
+moduleDealership #concealert .contentJob .titleJob .infoJob {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    display: flex;
+    font-size: 8px;
+    margin-left: 10px;
+    font-weight: normal;
+    border-radius: 100%;
+    background-color: slateblue;
+}
+moduleDealership #concealert .contentJob .textJob {
+    font-size: 12px;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}

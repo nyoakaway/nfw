@@ -1,0 +1,11 @@
+{
+    "insufficientItems": "Itens insuficientes!",
+    "insufficientSpaceInInventory": "Você não possui espaço na mochila!",
+    "ui-title1": "Sistema de Produção",
+    "ui-title2": "Receitas disponíveis",
+    "ui-search": "Pesquisar",
+    "ui-produce-button": "Produzir",
+    "ui-container-title": "Recursos",
+    "ui-container-subtitle": "para produção",
+    "ui-seconds": "Segundos"
+}

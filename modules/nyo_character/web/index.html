@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../modules/nyo_character/web/style.css">
+</head>
+
+<body>
+  <mainCharacter>
+    <aside>
+      <div class="category charCharacter" data-type="character" onclick="changeCharacterCategory('character');"><i class="fa-solid fa-id-card" style="color: #ffffff"></i></div>
+      <div class="category charAppearence" data-type="appearence" onclick="changeCharacterCategory('appearence');"><i class="fa-solid fa-palette" style="color: #ffffff"></i></div>
+    </aside>
+    <section>
+      <div id="categoryDrops">
+        <div id="menuCharacter" style="display: none;">
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Identidade</span>
+              <small>parte: personagem</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+           
+            <div class="content-show content-input" style="display: none;"> 
+              <small>Nome:</small>
+              <input type="text" id="creatorCharacterName">
+              <small>Nome do meio:</small>
+              <input type="text" id="creatorCharacterMidName">
+              <small>Sobrenome:</small>
+              <input type="text" id="creatorCharacterLastName">
+              <small>Idade:</small>
+              <input type="number" id="creatorCharacterAge">
+            </div>
+          </div>
+  
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Escolha o sexo</span>
+              <small>parte: personagem</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row" style="display: none;">
+              <div style="display: flex; flex-direction: row; width: 100%;">                
+                <div class="option characterGender" data-gender="F" onClick="characterChangeGender(this)"><i class="fas fa-venus"></i> Mulher</div>
+                <div class="option characterGender char-active" data-gender="M" onClick="characterChangeGender(this)"><i class="fas fa-mars"></i> Homem</div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Aparência Principal</span>
+              <small>tipo: personagem</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row content-characterParent" style="display: none;">
+                
+            </div>
+          </div>
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Aspectos do Rosto</span>
+              <small>tipo: cabeça</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row" style="display: none;">  
+              <div class="item-range">
+                <small>Altura Sobrancelhas</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 6)">
+              </div>
+              <div class="item-range">
+                <small>Tamanho Sobrancelhas</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 7)">
+              </div>
+              <div class="item-range">
+                <small>Tamanho Nariz</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 0)">
+              </div>
+              <div class="item-range">
+                <small>Altura Nariz</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 1)">
+              </div>
+              <div class="item-range">
+                <small>Tamanho Nariz</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 2)">
+              </div>
+              <div class="item-range">
+                <small>Ponte Nasal</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 3)">
+              </div>
+              <div class="item-range">
+                <small>Ponta do Nariz</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 4)">
+              </div>
+              <div class="item-range">
+                <small>Altura Bochechas</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 8)">
+              </div>
+              <div class="item-range">
+                <small>Largura Bochechas</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 9)">
+              </div>
+              <div class="item-range">
+                <small>Tamanho Bochechas</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 10)">
+              </div>
+              <div class="item-range">
+                <small>Lábios</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 12)">
+              </div>
+              <div class="item-range">
+                <small>Largura Mandíbula</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 13)">
+              </div>
+              <div class="item-range">
+                <small>Altura Mandíbula</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 14)">
+              </div>
+              <div class="item-range">
+                <small>Tamanho Queixo</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 15)">
+              </div>
+              <div class="item-range">
+                <small>Posição Queixo</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 16)">
+              </div>
+              <div class="item-range">
+                <small>Tamanho Queixo</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 17)">
+              </div>
+              <div class="item-range">
+                <small>Forma do Queixo</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 18)">
+              </div>
+              <div class="item-range">
+                <small>Largura Pescoço</small>
+                <input type="range" min="-1.0" max="0.99" step="0.01" value="0" oninput="characterChangeFaceFeature(this.value, 19)">
+              </div>
+  
+            </div>
+          </div>
+        </div>
+        <div id="menuAppearence" style="display: none;">
+ 
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Cabelo</span>
+              <small>tipo: cabeça</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row content-hair" style="display: none;">
+  
+            </div>
+          </div> 
+
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Olho</span>
+              <small>tipo: rosto</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row" style="display: none;">
+              <input type="range" min="0" max="34" step="1" value="0" oninput="characterChangeFaceFeature(this.value, 'eye')" style="width: 100%">
+            </div>
+          </div> 
+
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Sombrancelha</span>
+              <small>tipo: rosto</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row content-eyebrows" style="display: none;">
+  
+            </div>
+          </div> 
+
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Barba</span>
+              <small>tipo: rosto</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row content-beard" style="display: none;">
+  
+            </div>
+          </div> 
+
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Blush</span>
+              <small>tipo: rosto</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row content-blush" style="display: none;">
+  
+            </div>
+          </div> 
+          
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Batom</span>
+              <small>tipo: rosto</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row content-lipstick" style="display: none;">
+  
+            </div>
+          </div> 
+
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Manchas</span>
+              <small>tipo: rosto</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row content-blemishes" style="display: none;">
+  
+            </div>
+          </div> 
+
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Envelhecimento</span>
+              <small>tipo: rosto</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row content-ageing" style="display: none;">
+  
+            </div>
+          </div> 
+
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Aspecto</span>
+              <small>tipo: rosto</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row content-complexion" style="display: none;">
+  
+            </div>
+          </div> 
+
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Pele</span>
+              <small>tipo: rosto</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row content-sundamage" style="display: none;">
+  
+            </div>
+          </div> 
+
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Sardas</span>
+              <small>tipo: rosto</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row content-freckles" style="display: none;">
+  
+            </div>
+          </div> 
+
+          <div class="dropdown-item">
+            <div class="title">
+              <span>Maquiagem</span>
+              <small>tipo: rosto</small>
+              <div class="actions">
+                <div class="btn drop"><i class="fa-regular fa-chevron-down"></i></div>
+                <div class="btn close char-active"><i class="fal fa-times"></i></div>
+              </div>
+            </div>
+            <div class="content-show content-select flex-row content-makeup" style="display: none;">
+  
+            </div>
+          </div> 
+         
+         
+        </div>
+        
+      </div>      
+    </section>
+    <div class="btns-pagination">
+        
+        <!-- ======================================================================================== -->
+        <!-- Character Rotation                                                                       -->
+        <!-- ======================================================================================== -->
+
+        <input type="range" oninput="characterRotate(this.value)" value="180" min="0" max="360">
+
+        <!-- ======================================================================================== -->
+        <!-- Character Rotation                                                                       -->
+        <!-- ======================================================================================== -->
+
+      <button onclick="characterBackMulti()">voltar</button>
+      <button onclick="characterSave()">salvar</button>
+    </div>
+  </main>
+
+  <script src="../modules/nyo_character/web/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+{
+    "insufficientNameMinCharacter": "O nome do personagem precisa ser maior",
+    "insufficientMidNameMinCharacter": "O nome do meio do personagem precisa ser maior",
+    "insufficientLastNameMinCharacter": "O sobrenome do personagem precisa ser maior",
+    "incorrectAge": "Idade incorreta"
+}
