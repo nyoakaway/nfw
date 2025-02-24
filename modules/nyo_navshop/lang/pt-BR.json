@@ -1,0 +1,9 @@
+{
+    "ui-title-sell": "Vendas",
+    "ui-title-buy": "Compras",
+    "ui-subtitle": "Produtos disponíveis",
+    "ui-sell-button": "Vender",
+    "ui-buy-button": "Comprar",
+    "ui-currency-symbol": "R$",
+    "ui-dirty-money": "(sujo)"
+}

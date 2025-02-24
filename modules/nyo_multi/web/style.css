@@ -1,0 +1,254 @@
+moduleMulti {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+moduleMulti * {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  /*font-family: 'Montserrat', sans-serif;*/
+}
+
+moduleMulti multichar {
+  position: relative;
+  height: 250px;
+  display: flex;
+  margin: 0 80px;
+  flex-direction: column;
+}
+
+moduleMulti multichar .title {
+  position: absolute;
+  top: -55px;
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+moduleMulti multichar .title small {
+  opacity: .5;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+moduleMulti multichar menu {
+  height: 100%;
+  display: flex;
+}
+
+moduleMulti multichar menu aside {
+  width: 2px;
+  height: 100%;
+  border-right: 2px dashed rgba(255, 255, 255, 0.397);
+}
+
+
+moduleMulti multichar menu section {
+  position: relative;
+  width: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 300px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+moduleMulti multichar menu section .item {
+  position: relative;
+  opacity: .5;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  transition: all .3s;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.711);
+}
+
+moduleMulti multichar menu section .item #plus {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-weight: bold;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+}
+
+moduleMulti multichar menu section .active {
+  opacity: 1;
+  background-color: #0075DE;
+}
+
+moduleMulti multichar menu section .active::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(86.63deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 117, 222, 0) 129.98%);
+}
+
+moduleMulti multichar menu section .item:hover {
+  opacity: 1;
+  background-color: #0075DE;
+}
+
+moduleMulti multichar menu section .item img {
+  position: relative;
+  top: 5px;
+  left: -5px;
+  z-index: 101;
+  max-width: 35%;
+  transform: scaleX(-1);
+}
+
+moduleMulti multichar menu section .item .item-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ffff;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: right;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+moduleMulti multichar menu section .item .item-info small {
+  opacity: .5;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+moduleMulti multichar menu section .item:last-child {
+  margin: 0;
+}
+
+moduleMulti infoperson {
+  position: absolute;
+  right: 120px;
+  width: 330px;
+  height: 500px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.50);
+  display: none;
+}
+
+moduleMulti infoperson header {
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  display: flex;
+  overflow: hidden;
+  padding-left: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0 0;
+  background-color: #0075DE;
+}
+
+moduleMulti infoperson header small {
+  opacity: .5;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+moduleMulti infoperson header img {
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+moduleMulti infoperson section {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+moduleMulti infoperson section .item {
+  width: 100%;
+  display: flex;
+  color: #ffff;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.20);
+}
+
+moduleMulti infoperson section .item span:first-child {
+  opacity: .5;
+}
+
+moduleMulti infoperson section .item:last-child {
+  margin-bottom: 5px;
+}
+
+moduleMulti infoperson footer {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+moduleMulti infoperson footer button {
+  width: 50%;
+  border: 0;
+  outline: none;
+  height: 40px;
+  margin: 0 5px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #0075DE;
+}
+
+moduleMulti infoperson footer button:first-child {
+
+  background-color: #FF2D2D;
+}
+
+/* moduleMulti ::-webkit-scrollbar {
+  width: 0;
+} */
+
+moduleMulti ::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.400);
+}
+
+moduleMulti ::-webkit-scrollbar-track {
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.400);
+}
+
+moduleMulti ::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #0075DE; 
+}

@@ -1,0 +1,552 @@
+#nui-nyo_inventory moduleInventory {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e4e4e6c;
+}
+
+#nui-nyo_inventory moduleInventory * {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+  font-smooth: none;
+  box-sizing: border-box;
+}
+
+#nui-nyo_inventory moduleInventory aside {
+  display: flex;
+  flex-direction: column;
+}
+
+#nui-nyo_inventory moduleInventory b {
+  color: #0075DE;
+  font-weight: bold;
+}
+
+#nui-nyo_inventory moduleInventory aside header {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1vw;
+  align-items: center;
+}
+
+#nui-nyo_inventory moduleInventory .flex {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+}
+
+#nui-nyo_inventory moduleInventory .inv-right header {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+#nui-nyo_inventory moduleInventory aside header .icon {
+  width: 3vw;
+  height: 3vw;
+  color: #fff;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+  border-radius: .5vw;
+  justify-content: center;
+  background-color: #0075DE;
+}
+
+#nui-nyo_inventory moduleInventory aside header .info {
+  display: flex;
+  color: #fff;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+#nui-nyo_inventory moduleInventory .inv-right header .info {
+  margin: 0;
+  margin-right: 10px;
+}
+
+#nui-nyo_inventory moduleInventory aside header .info h1 {
+  font-size: 2vw;
+}
+
+#nui-nyo_inventory moduleInventory aside header .info small {
+  opacity: .5;
+  font-size: .6vw;
+}
+
+#nui-nyo_inventory moduleInventory aside section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#nui-nyo_inventory moduleInventory aside section .invContainer {
+  display: grid;
+  height: 25vw;
+  overflow: auto;
+  grid-gap: .3vw;
+  overflow-x: hidden;
+  position: relative;
+  grid-template-columns: repeat(4, 6vw);
+}
+
+#nui-nyo_inventory moduleInventory aside section .invContainer .item,
+.item.itemDrag.ui-draggable-dragging {
+  position: relative;
+  width: 6vw;
+  height: 6vw;
+  padding: .5vw;
+  display: flex;
+  border-radius: 2px;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#nui-nyo_inventory moduleInventory aside section .invContainer .item:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#nui-nyo_inventory moduleInventory aside section .invContainer .item p,
+.item.itemDrag.ui-draggable-dragging p {
+  position: absolute;
+  margin: 0;
+  color: #fff;
+  width: 5vw;
+  font-size: .45vw;
+  overflow: hidden;
+  font-weight: 500;
+ /* white-space: nowrap;*/
+  letter-spacing: .05vw;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  /*margin-top: 4vw;*/
+  text-align: center;
+  height: 1.3vw;
+  bottom: 0.1vw;
+  left: 0.5vw;
+}
+
+#nui-nyo_inventory moduleInventory aside section .invContainer .item .iNumberLeft,
+.item.itemDrag.ui-draggable-dragging .iNumberLeft {
+  position: absolute;
+  color: #6499FF;
+  font-weight: bold;
+  font-size: .5vw;
+  text-transform: uppercase;
+  top: 0.2vw;
+  left: 0.2vw;
+}
+
+#nui-nyo_inventory moduleInventory aside section .invContainer .item .iNumberRight,
+.item.itemDrag.ui-draggable-dragging .iNumberRight {
+  position: absolute;
+  color: #6499FF;
+  font-weight: bold;
+  font-size: .5vw;
+  width: 5vw;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0.2vw;
+  right: 0.2vw;
+}
+
+
+#nui-nyo_inventory moduleInventory aside section .invContainer .item img,
+.item.itemDrag.ui-draggable-dragging img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  max-width: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#nui-nyo_inventory moduleInventory aside .item-weapon,
+.item-weapon.ui-draggable-dragging {
+  position: relative;
+  width: 17vw;
+  height: 6vw;
+  display: flex;
+  border-radius: 2px;
+  margin-bottom: .3vw;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#nui-nyo_inventory moduleInventory aside .item-weapon .name-weapon,
+.item-weapon.ui-draggable-dragging .name-weapon {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  color: #fff;
+  display: flex;
+  font-size: .6vw;
+  align-items: flex-end;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+#nui-nyo_inventory moduleInventory aside .item-weapon .empty,
+.item-weapon.ui-draggable-dragging .empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  font-size: .7vw;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  flex-direction: column;
+  text-transform: uppercase;
+  transform: translate(-50%,-50%);
+}
+
+#nui-nyo_inventory moduleInventory aside .item-weapon .empty small,
+.item-weapon.ui-draggable-dragging .empty small {
+  opacity: .5;
+  font-size: .5vw;  
+  font-weight: 100;
+  margin-top: .1vw;
+  letter-spacing: 0.05vw;
+}
+
+#nui-nyo_inventory moduleInventory aside .item-weapon footer,
+.item-weapon.ui-draggable-dragging footer {
+  position: relative;
+  top: -8px;
+  display: flex;
+  padding: 0 .7vw;
+  align-items: center;
+}
+
+#nui-nyo_inventory moduleInventory aside .item-weapon footer p,
+.item-weapon.ui-draggable-dragging footer p {
+  display: flex;
+  color: #fff;
+  font-size: .6vw;
+  letter-spacing: .02vw;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+#nui-nyo_inventory moduleInventory aside .item-weapon footer .attachs,
+.item-weapon.ui-draggable-dragging footer .attachs {
+  margin-left: .5vw;
+  display: flex;
+  align-items: center;
+}
+
+#nui-nyo_inventory moduleInventory aside .item-weapon footer .attachs .attach,
+.item-weapon.ui-draggable-dragging footer .attachs .attach {
+  width: 1.5vw;
+  height: 1.5vw;
+  display: flex;
+  border-radius: 2px;
+  margin-right: .15vw;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+#nui-nyo_inventory moduleInventory aside .item-weapon footer .attachs .attach img,
+.item-weapon.ui-draggable-dragging footer .attachs .attach img {
+  max-width: 80%;
+}
+
+#nui-nyo_inventory moduleInventory aside .item-weapon footer .attachs .attach:last-child,
+.item-weapon.ui-draggable-dragging footer .attachs .attach:last-child {
+  margin: 0;
+}
+
+#nui-nyo_inventory moduleInventory aside .item-weapon img,
+.item-weapon.ui-draggable-dragging img {
+  max-width: 50%;
+  margin: .8vw;
+}
+
+#nui-nyo_inventory moduleInventory aside .item-hotbar {
+  position: relative;
+  width: 50%;
+  height: 5.5vw;
+  border-radius: 2px;
+  margin-right: .3vw;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+#nui-nyo_inventory moduleInventory aside .item-hotbar p {
+  position: absolute;
+  color: #fff;
+  top: .25vw;
+  right: .3vw;
+  max-width: 3.5vw;
+  font-size: .5vw;
+  overflow: hidden;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#nui-nyo_inventory moduleInventory aside .item-hotbar small {
+  position: absolute;
+  left: 50%;
+  color: #fff;
+  bottom: .3vw;
+  font-size: .5vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  transform: translate(-50%,0);
+}
+
+#nui-nyo_inventory moduleInventory aside .item-hotbar img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#nui-nyo_inventory moduleInventory aside .item-hotbar:last-child {
+  margin: 0;
+}
+
+#nui-nyo_inventory moduleInventory #trading {
+  margin-left: 1vw;
+}
+
+#nui-nyo_inventory moduleInventory  trade-content {
+  width: 25vw;
+  padding: .5vw;
+  height: 12.3vw;
+  border-radius: 2px;
+  margin-bottom: .3vw;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+#nui-nyo_inventory moduleInventory  trade-content p {
+  color: #fff;
+  font-size: .6vw;
+  font-weight: bold;
+  letter-spacing: .05vw;
+  text-transform: uppercase;
+}
+
+#nui-nyo_inventory moduleInventory  trade-content .inventory-content {
+  width: 100%;
+  height: 75%;
+  display: grid;
+  overflow: auto;
+  grid-gap: .35vw;
+  margin-top: .5vw;
+  grid-template-columns: repeat(5, 4.5vw);
+}
+
+#nui-nyo_inventory moduleInventory  trade-content .inventory-content .item-trade {
+  width: 4.5vw;
+  height: 4.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+#nui-nyo_inventory moduleInventory  trade-content .inventory-content .item-trade img {
+  max-width: 50%;
+}
+
+#nui-nyo_inventory moduleInventory  trade-content .trade-info {
+  width: 100%;
+  display: flex;
+  color: #fff;
+  font-size: .6vw;
+  margin-top: .7vw;
+  font-weight: bold;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: flex-end;
+}
+
+#nui-nyo_inventory moduleInventory  trade-content .trade-info input {
+  width: .7vw;
+  height: .7vw;
+  margin-left: .5vw;
+}
+
+#nui-nyo_inventory moduleInventory  trade-content:last-child {
+  margin: 0;
+}
+
+#nui-nyo_inventory moduleInventory center {
+  position: relative;
+  top: 2.5vw;
+  padding: .6vw;
+  display: flex;
+  margin: 0vw 1vw;
+  align-items: center;
+  border-radius: .5vw;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 50.52%, rgba(0, 0, 0, 0.25) 100%);
+}
+
+#nui-nyo_inventory moduleInventory center button {
+  border: 0;
+  width: 3.2vw;
+  height: 3.2vw;
+  outline: none;
+  margin: .2vw 0;
+  display: flex;
+  color: #fff;
+  font-size: 1.1vw;
+  align-items: center;
+  border-radius: 100%;
+  transition: all .3s;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#nui-nyo_inventory moduleInventory center button:first-child {
+  pointer-events: none;
+  background-color: #0075DE;
+}
+
+#nui-nyo_inventory moduleInventory center button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#nui-nyo_inventory moduleInventory ::-webkit-scrollbar {
+  width: 0;
+}
+
+#nui-nyo_inventory moduleInventory .ui-helper-hidden-accessible {
+  display: none;
+}
+
+.ui-tooltip {
+  pointer-events: none;
+  position: absolute;
+  z-index: 9999;
+  color: #fff;
+  display: flex;
+  padding-left: 5px;
+  border-radius: 5px;
+  transform: scale(.9);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.ui-tooltip img {
+  width: 70px;
+  height: 100px;
+}
+
+.ui-tooltip>div {
+  display: flex;
+}
+
+.ui-tooltip .text {
+  display: flex;
+  padding: 10px;
+  letter-spacing: 1px;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.ui-tooltip .text p {
+  position: relative;
+  opacity: .6;
+  font-size: 0.5vw;
+  max-width: 170px;
+  margin-bottom: 10px;
+}
+
+.ui-tooltip label {
+  font-size: 0.5vw;
+  opacity: .6;
+}
+
+.ui-tooltip .row {
+  display: flex;
+}
+
+.ui-tooltip .column {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.ui-tooltip .column {
+  margin-right: 10px;
+}
+
+.ui-tooltip .column:last-child {
+  margin-right: 0;
+}
+
+.ui-tooltip .column svg {
+  margin-right: 5px;
+}
+
+.ui-tooltip .column .br {
+  display: flex;
+  flex-direction: column;
+}
+
+.ui-tooltip .column span {
+  font-size: .9vw;
+}
+
+.swal2-modal {
+  color: #fff !important;
+  background: rgba(0, 0, 0, 0.500) !important;
+}
+
+.swal2-input {
+  color: #fff !important;
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  text-align: center !important;
+  border-radius: 20px !important;
+  appearance: textfield !important;
+  -moz-appearance: textfield !important;
+  background: rgba(0, 0, 0, .5) !important;
+}
+
+.swal2-validation-message {
+  color: #fff !important;
+  background: transparent !important;
+}
+
+.swal2-cancel {
+  background: salmon !important;
+}
+
+.swal2-confirm {
+  background: #0075DE !important;
+}
+
+#nui-nyo_inventory moduleInventory .number,
+.item-weapon.ui-draggable-dragging .number {
+  position: absolute;
+  top: .24vw;
+  left: .2vw;
+  width: .7vw;
+  height: .7vw;
+  color: #fff;
+  display: flex;
+  font-size: .5vw;
+  font-weight: 600;
+  border-radius: 1px;
+  align-items: center;
+  justify-content: center;
+  background-color: #0075DE;
+}

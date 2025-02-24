@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../modules/nyo_inventory/web/style.css">
+</head>
+<moduleInventory>
+  <body>
+
+    <aside id="inventoy">
+      <header>
+        <div class="icon"><i class="fa-solid fa-backpack"></i></div>
+        <div class="info">
+          <h1>inventario</h1>
+          <small>atual <b class="invLeftWeight">0kg</b> com maximo de <b class="invLeftMaxWeight">0kg</b></small>
+        </div>
+      </header>
+      <section>
+        <div class="invContainer" id="invLeft">
+          
+        </div>
+      </section>
+    </aside>
+  
+    <center>
+      <button><i class="far fa-arrow-down"></i></button>
+      <button id="inventoryItemUse" style="display: none;"><i class="fas fa-user-plus"></i></button>
+      <button id="inventoryItemDrop" style="display: none;"><i class="fas fa-trash"></i></button>
+      <button id="inventoryItemSend" style="display: none;"><i class="fas fa-paper-plane"></i></button>
+    </center>
+  
+    <aside class="inv-right" id="secundary" style="display: none;">
+      <header>
+        <div class="info">
+          <h1>baú</h1>
+          <small>atual <b class="invRightWeight">0kg</b> com maximo de <b class="invRightMaxWeight">0kg</b></small>
+        </div>
+        <div class="icon"><i class="fa-solid fa-toolbox"></i></div>
+      </header>
+      <section>
+        <div class="invContainer" id="invRight">
+  
+        </div>
+      </section>
+    </aside>
+  
+    <aside class="inv-right" id="weapons" style="display: none;">
+      <header>
+        <div class="info">
+          <h1>arsenal</h1>
+          <small>Armamentos <b>equipados</b></small>
+        </div>
+        <div class="icon"><i class="fa-solid fa-gun"></i></div>
+      </header>
+      <div id="hotkeys">
+       
+      </div>
+      
+    </aside>
+  
+    <aside class="inv-right" id="trading" style="display: none;">
+      <header>
+        <div class="info">
+          <h1>trocas</h1>
+          <small><b>trocar itens</b> com proximo</small>
+        </div>
+        <div class="icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+      </header>
+      <trade-content>
+        <p><b>inventario</b>: seus itens</p>
+        <div class="inventory-content">
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+        </div>
+        <div class="trade-info">
+          <small>confirmar troca ?</small>
+          <input type="checkbox">
+        </div>
+      </trade-content>
+      <trade-content>
+        <p><b>inventario</b>: itens do proximo</p>
+        <div class="inventory-content">
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+          <div class="item-trade"></div>
+        </div>
+        <div class="trade-info">
+          <b>aguardando confirmação</v>
+        </div>
+      </trade-content>
+    </aside>
+  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
+    <script src="../modules/nyo_inventory/web/script.js"></script>
+  </body>
+</moduleInventory>
+
+</html>

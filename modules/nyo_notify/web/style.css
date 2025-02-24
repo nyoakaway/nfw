@@ -1,0 +1,380 @@
+notifyContainer * {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    user-select: none;
+}
+
+:root {
+    --MainBlack: #202020;
+    --SecBlack: #363636;
+    --MainColor: #FF2F48;
+    --CancelButton: #FF2F48;
+    --CancelHover: #da051e;
+    --ApplyButton: #03CC6B;
+    --ApplyHover: #00ad5a;
+    --SuccessNotify: #00FFC2;
+    --DeniedNotify: #FF2F48;
+    --WarningNotify: #FFF500;
+}
+
+/********************************************* Positions *********************************************/
+
+.Progress {
+    position: absolute;
+    width: 333px;
+    padding: 16px;
+    background-color: var(--MainBlack);
+    border-radius: 5px;
+    bottom: 78px;
+    left: calc(50% - 166px);
+    display: flex;
+    flex-direction: column;
+}
+
+.Prompt {
+    display: flex;
+    flex-direction:  column;
+    position: absolute;
+    width: 333px;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 5px;
+    background-color: var(--MainBlack);
+    bottom: calc(50% - 120px);
+    left: calc(50% - 166px);
+}
+
+.ItemsWrapper {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 16px;
+    bottom: 165px;
+}
+
+.NotifysWrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    right: 20px;
+    gap: 16px;
+    width: 268px;
+}
+
+/********************************************* Progress *********************************************/
+
+.Progress > .Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+
+.Progress > .Header > .Title {
+    font-weight: bold;
+    color: white;
+}
+
+.Progress > .Header > .Time {
+    font-weight: 300;
+    color: white;
+}
+
+.Progress > .Bar {
+    position: relative;
+    width: 100%;
+    height: 22px;
+    border-radius: 5px;
+    background-color: var(--SecBlack);
+}
+
+.Progress > .Bar > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    background-color: var(--MainColor);
+}
+
+.Progress > .Bar > div > p {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.Progress > .LeftAbsolute {
+    position: absolute;
+    width: 3px;
+    height: 45px;
+    left: -1px;
+    background-color: var(--MainColor);
+}
+
+/********************************************* Prompt *********************************************/
+
+.Prompt > .Title {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--MainColor);
+}
+
+.Prompt > .TextArea {
+    width: 100%;
+    height: 134px;
+    background-color: var(--SecBlack);
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.Prompt > .Buttons {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+.Prompt > .Buttons > button {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 10px;
+    color: white;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+.Prompt > .LeftAbsolute {
+    position: absolute;
+    width: 3px;
+    height: 134px;
+    top: calc(50% - 67px);
+    left: -1px;
+    background-color: var(--MainColor);
+}
+
+.Prompt > .Buttons #confirm {
+    background-color: var(--ApplyButton);
+}
+
+.Prompt > .Buttons #confirm:hover {
+    background-color: var(--ApplyHover);
+}
+
+.Prompt > .Buttons #cancel {
+    background-color: var(--CancelButton);
+}
+
+.Prompt > .Buttons #cancel:hover {
+    background-color: var(--CancelHover);
+}
+
+/********************************************* NotifyItem *********************************************/
+
+.ItemsWrapper > .Item {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    background-color: var(--MainBlack);
+    border-radius: 5px;
+    align-items: center;
+    position: relative;
+}
+
+.ItemsWrapper > .Item > .Text > .Type {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ItemsWrapper > .Item#received > .Text > .Type {
+    color: var(--SuccessNotify);
+}
+
+.ItemsWrapper > .Item#removed > .Text > .Type {
+    color: var(--DeniedNotify);
+}
+
+.ItemsWrapper > .Item > .Text > .Qtd {
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.ItemsWrapper > .Item > img {
+    height: 40px;
+    width: 40px;
+}
+
+.ItemsWrapper > .Item > .LeftAbsolute {
+    position: absolute;
+    width: 3px;
+    height: 45px;
+    left: -1px;
+    border-radius: 5px;
+    background-color: var(--MainColor);
+}
+
+.ItemsWrapper > .Item#received > .LeftAbsolute {
+    background-color: var(--SuccessNotify);
+}
+
+.ItemsWrapper > .Item#removed > .LeftAbsolute {
+    background-color: var(--DeniedNotify);
+}
+
+/********************************************* Notify *********************************************/
+
+.Notify {
+    display: flex;
+    position: relative;
+    padding: 16px;
+    background-color: var(--MainBlack);
+    border-radius: 5px;
+    align-items: center;
+    gap: 16px;
+}
+
+.Notify > i {
+    font-size: 20px;
+}
+
+.Notify > .LeftAbsolute {
+    position: absolute;
+    width: 3px;
+    height: 80%;
+    left: -1px;
+    border-radius: 5px;
+}
+
+.Notify > .Infos > .Title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Notify > .Infos > .Content {
+    font-size: 12px;
+    font-weight: 400px;
+    max-width: 200px;
+    color: white;
+}
+
+/********************************************* Request *********************************************/
+
+.Request {
+    display: flex;
+    position: relative;
+    padding: 16px 16px 20px 16px;
+    background-color: var(--MainBlack);
+    border-radius: 5px;
+    align-items: center;
+    gap: 16px;
+}
+
+.Request > i {
+    font-size: 20px;
+}
+
+.Request > .LeftAbsolute {
+    position: absolute;
+    width: 3px;
+    height: 40px;
+    left: -1px;
+    border-radius: 5px;
+}
+
+.Request#success > .LeftAbsolute {
+    background-color: var(--SuccessNotify);
+}
+
+.Request#denied > .LeftAbsolute {
+    background-color: var(--DeniedNotify);
+}
+
+.Request#warning > .LeftAbsolute {
+    background-color: var(--WarningNotify);
+}
+
+.Request#success > i {
+    color: var(--SuccessNotify);
+}
+
+.Request#denied > i {
+    color: var(--DeniedNotify);
+}
+
+.Request#warning > i {
+    color: var(--WarningNotify);
+}
+
+.Request#success > .Infos > .Title {
+    color: var(--SuccessNotify);
+}
+
+.Request#denied > .Infos > .Title {
+    color: var(--DeniedNotify);
+}
+
+.Request#warning > .Infos > .Title {
+    color: var(--WarningNotify);
+}
+
+.Request > .Infos > .Title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Request > .Infos > .Content {
+    font-size: 12px;
+    font-weight: 400px;
+    max-width: 200px;
+    color: white;
+}
+
+.Request > .Buttons {
+    display: flex;
+    width: 170px;
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    left: 53px;
+    bottom: -12px;
+}
+
+.Request > .Buttons > #accept {
+    background-color: var(--ApplyButton);
+}
+
+.Request > .Buttons > #accept:hover {
+    background-color: var(--ApplyHover);
+}
+
+.Request > .Buttons > #deny {
+    background-color: var(--CancelButton);
+}
+
+.Request > .Buttons > #deny:hover {
+    background-color: var(--CancelHover);
+}
+
+.Request > .Buttons > button {
+    border-radius: 5px;
+    width: 100%;
+    height: 25px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+}

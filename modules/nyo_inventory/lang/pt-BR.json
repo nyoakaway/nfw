@@ -1,0 +1,33 @@
+{
+    "inv-title-inventory": "Inventario",
+    "inv-title-hotkey": "Hotkey",
+    "inv-title-trunk-chest": "Porta-Malas",
+    "inv-title-mid-car-chest": "Porta-Livas",
+    "inv-title-chest": "Baú",
+
+    "action-error": "Erro",
+    "action-error-invalid-action": "Ação não permitida para este item!",
+    "action-error-invalid-item": "Item não localizado",
+    "action-error-invalid-item-slot": "Você não pode utilizar este tipo de item neste slot",
+    "action-error-equiped-item": "Você já possui um item desses equipado",
+    "action-error-equiped-attachs": "Você já possui este attachs equipado",
+    "action-error-amount-invalid": "Obrigatorio informar a quantidade",
+    "action-error-invalid-space": "Você não possui espaço para este item",
+    "action-error-invalid-item-storage": "Você não pode guardar este item",
+    "action-error-invalid-item-take": "Você não pode pegar este item",
+    "action-error-invalid-ammo-use": "Você não pode utilizar esta munição aqui",
+    "action-error-equiped-weapon": "Você não pode equipar 2 armas do mesmo TIPO",
+    "action-error-invalid-attachs-use": "Você não pode utilizar este Attachs nesta arma",
+    "action-error-attach-type-duplicate": "Você ja possui um attach deste tipo na arma",
+    "action-error-attach-max": "Numero maximo de attachs ja equipados nesta arma",
+    "action-error-invalid-ammo-max": "Maximo de munição atingido",
+    "action-error-max-bag-weight": "Você utilizou uma mochila que ultrapassou o limite maximo! O peso maximo da sua mochila foi ajustada",
+    "action-error-max-bag-weight2": "Não foi possivel utilizar este item! Tamanho maximo da mochila atingido!",
+    "action-error-invalid-ammo-qtd": "Você não possui esta quantidade de munição na arma",
+
+    "action-error-invalid-vehicle": "Nenhum veiculo proximo!",
+    "action-error-invalid-fuel": "Tipo de combustivel incorreto para este veiculo!",
+    "action-error-invalid-fuel2": "Veiculo não localizado ou com tanque/bateria cheio(a)",
+    "action-error-vehicleNotLock": "O veiculo não encontra-se trancado",
+    "action-error-invalid-trash": "Nenhuma lixeira valida proxima!"
+}

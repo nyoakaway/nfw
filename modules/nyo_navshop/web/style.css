@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+moduleNavShop body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+moduleNavShop * {
+    outline: none;
+    list-style: none;
+    user-select: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+moduleNavShop mainNavShop {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    transform: translate(0,-50%);
+}
+
+moduleNavShop mainNavShop .title {
+    position: absolute;
+    top: -60px;
+    left: 45px;
+    color: #fff;
+    filter: drop-shadow(0px 0px 10px #000000);
+    font-weight: 600;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+moduleNavShop mainNavShop .title small {
+    opacity: .5;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+moduleNavShop mainNavShop menu {
+    height: 100%;
+    display: flex;
+}
+
+moduleNavShop mainNavShop menu aside {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    padding-right: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 2px dashed rgba(255, 255, 255, 0.897);
+}
+
+moduleNavShop mainNavShop menu aside .itemMenu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: all .3s;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.811);
+}
+
+moduleNavShop mainNavShop menu aside .active {
+    background-color: #0075DE;
+}
+
+moduleNavShop mainNavShop menu aside .itemMenu:hover {
+    color: #000;
+    opacity: 1;
+    background-color: #0075DE;
+}
+
+moduleNavShop mainNavShop menu aside .itemMenu img {
+    max-width: 50%;
+}
+
+moduleNavShop mainNavShop menu section {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+    padding-left: 20px;
+}
+
+moduleNavShop mainNavShop menu section .itemNav {
+    position: relative;
+    opacity: .8;
+    width: 300px;
+    height: 80px;
+    display: flex;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    transition: all .3s;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.951);
+}
+
+moduleNavShop .listagemNavShop {
+
+    padding-right: 10px;
+
+}
+
+moduleNavShop mainNavShop menu section .itemNav .overlay {
+    display: none;
+}
+
+moduleNavShop mainNavShop menu section .active {
+    opacity: 1;
+    background-color: #0075DE;
+}
+
+moduleNavShop mainNavShop menu section .active::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(86.63deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 117, 222, 0) 129.98%);
+}
+
+moduleNavShop mainNavShop menu section .active .overlay {
+    position: absolute;
+    left: 50px;
+    z-index: 101;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: all .3s;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.811);
+}
+
+moduleNavShop mainNavShop menu section .active .overlay:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+moduleNavShop mainNavShop menu section .itemNav:hover {
+    opacity: 1;
+    background-color: #0075DE;
+}
+
+moduleNavShop mainNavShop menu section .itemNav img {
+    width: 75px;
+    height: 75px;
+}
+
+moduleNavShop mainNavShop menu section .active img {
+    filter: blur(5px);
+}
+
+moduleNavShop mainNavShop menu section .itemNav .item-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffff;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+moduleNavShop mainNavShop menu section .itemNav .item-info small {
+    opacity: .5;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+moduleNavShop mainNavShop menu section .itemNav:last-child {
+    margin: 0;
+}
+
+moduleNavShop ::-webkit-scrollbar { width: 0;}
+
+moduleNavShop ::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.400);
+}
+  
+moduleNavShop ::-webkit-scrollbar-track {
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.400);
+}
+  
+moduleNavShop ::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: #0075DE; 
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="../modules/nyo_notify/web/style.css">
+        <title>Nyo_ui</title>
+    </head>
+    <body>
+        <notifyContainer>
+            <div class="Progress" style="display: none;">
+                <div class="LeftAbsolute"></div>
+                <div class="Header">
+                    <p class="Title">Bebendo agua</p>
+                    <p class="Time">00:00:05</p>
+                </div>
+                <div class="Bar">
+                    <div>
+                        <p class="progressPorcent">50%</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="Prompt" style="display: none;">
+                <div class="LeftAbsolute"></div>
+                <p class="Title">Coordenadas</p>
+                <textarea class="TextArea textareaPrompt" placeholder=""></textarea>
+                <div class="Buttons">
+                    <button id="cancel" onclick="promptCancelar()">CANCELAR</button>
+                    <button id="confirm" onclick="promptConfirmar()">ENVIAR</button>
+                </div>
+            </div>
+    
+            <div class="ItemsWrapper">
+            
+            </div>
+            
+            <div class="NotifysWrapper">
+
+            </div>
+        </notifyContainer>
+        
+
+
+    </body>
+    <script src="../modules/nyo_notify/web/script.js"></script>
+</html>
