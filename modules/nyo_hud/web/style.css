@@ -1,0 +1,900 @@
+/************************************************************** Reset CSS **************************************************************/
+
+moduleHud * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/************************************************************** Variables **************************************************************/
+
+:root {
+    --MainBlack: #202020;
+    --SecBlack: #363636;
+    --DefaultHealth: #ff0000;
+    --DefaultArmor: #1024d8;
+    --DefaultStamine: #fcc100;
+    --DefaultHunger: #158000;
+    --DefaultThirst: #00a2ff;
+    --DefaultMic: rgb(255, 255, 255);
+    --White50: rgba(255, 255, 255, 0.5);
+    --DefaultMain: #FF2F48;
+    --ToggleDisabled: #FF2F48;
+    --ToggleEnabled: #03CC6B;
+}
+
+/************************************************************** Default Positions **************************************************************/
+
+moduleHud .Infos {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    /*left: 20px;*/
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px
+}
+
+moduleHud .Chat {
+    position: absolute;
+    height: 275px;
+    width: 415px;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+moduleHud .State {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 16px;
+}
+
+moduleHud .Config {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 333px;
+    top: calc(50% - 161px);
+    right: 20px;
+    padding: 16px;
+    background-color: var(--MainBlack);
+    border-radius: 5px;
+    gap: 16px
+}
+
+moduleHud .Logo > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 150px;
+    width: 150px;
+}
+
+/************************************************************** General **************************************************************/
+
+moduleHud .health #fill-fill,.health i {
+    stroke: var(--DefaultHealth);
+    color: var(--DefaultHealth);
+}
+
+moduleHud .health  > .fill-progress {
+    background-color: var(--DefaultHealth);
+}
+
+moduleHud .armor #fill-fill,.armor i {
+    stroke: var(--DefaultArmor);
+    color: var(--DefaultArmor);
+}
+
+moduleHud .armor > .fill-progress {
+    background-color: var(--DefaultArmor);
+}
+
+moduleHud .stamine #fill-fill, .stamine  i {
+    stroke: var(--DefaultStamine);
+    color: var(--DefaultStamine);
+}
+
+moduleHud .stamine > .fill-progress {
+    background-color: var(--DefaultStamine);
+}
+
+moduleHud .hunger #fill-fill,.hunger i {
+    stroke: var(--DefaultHunger);
+    color: var(--DefaultHunger);
+}
+
+moduleHud .hunger > .fill-progress {
+    background-color: var(--DefaultHunger);
+}
+
+moduleHud .thirst #fill-fill,.thirst i {
+    stroke: var(--DefaultThirst);
+    color: var(--DefaultThirst);
+}
+
+moduleHud .thirst > .fill-progress {
+    background-color: var(--DefaultThirst);
+}
+
+moduleHud .microfone #fill-fill,.microfone i {
+    stroke: var(--DefaultMic);
+    color: var(--DefaultMic);
+}
+
+moduleHud .microfone > .fill-progress {
+    background-color: var(--DefaultMic);
+}
+
+moduleHud .prog-circular-fill > .offsets  > #back-fill {
+    stroke: var(--SecBlack);
+    fill: var(--SecBlack);
+    stroke-width: 4px;
+}
+
+moduleHud .prog-square-fill > .offsets  > #back-fill {
+    stroke: var(--SecBlack);
+    fill: var(--SecBlack);
+    stroke-width: 4px;
+}
+
+moduleHud .prog-diamond-fill > .offsets > #back-fill {
+    stroke: var(--SecBlack);
+    fill: var(--SecBlack);
+    stroke-width: 4px;
+}
+
+moduleHud .health > .square-fill-progress > div {
+    width: 4px;
+    border-radius: 5px;
+    background-color: var(--DefaultHealth);
+    height: 90%;
+}
+
+moduleHud .armor > .square-fill-progress > div {
+    width: 4px;
+    border-radius: 5px;
+    background-color: var(--DefaultArmor);
+    height: 90%;
+}
+
+moduleHud .stamine > .square-fill-progress > div {
+    width: 4px;
+    border-radius: 5px;
+    background-color: var(--DefaultStamine);
+    height: 90%;
+}
+
+moduleHud .hunger > .square-fill-progress > div {
+    width: 4px;
+    border-radius: 5px;
+    background-color: var(--DefaultHunger);
+    height: 90%;
+}
+
+moduleHud .thirst > .square-fill-progress > div {
+    width: 4px;
+    border-radius: 5px;
+    background-color: var(--DefaultThirst);
+    height: 90%;
+}
+
+moduleHud .microfone > .square-fill-progress > div {
+    width: 4px;
+    border-radius: 5px;
+    background-color: var(--DefaultMic);
+    height: 90%;
+}
+
+/************************************************************** Circular Fill Progress Bar **************************************************************/
+
+moduleHud .prog-circular-fill {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: var(--MainBlack);
+    border-radius: 100%;
+}
+
+moduleHud .prog-circular-fill > .offsets  {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+moduleHud .prog-circular-fill > .offsets circle {
+    transform: translate(5px,5px);
+}
+
+moduleHud .prog-circular-fill > .offsets rect,.prog-circular-fill > .square-fill-progress {
+    display: none;
+}
+
+moduleHud .prog-circular-fill > .offsets  > #fill-fill {
+    fill: var(--MainBlack);
+    stroke-width: 2px;
+	stroke-dasharray: 126;
+	stroke-dashoffset: calc((126 * 90) / 100);
+
+    
+	transform: rotate(270deg) translate(5px,5px);
+	transform-origin: 50% 50%;
+}
+
+moduleHud .prog-circular-fill > .Icon-Wrapper {
+    position: absolute;
+    font-size: 20px;
+    z-index: 999;
+    top: 13px;
+    left: 13px;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/************************************************************** Diamond Fill Progress Bar **************************************************************/
+
+moduleHud .prog-diamond-fill {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-color: var(--MainBlack);
+    transform: rotate(45deg);
+}
+
+moduleHud .prog-diamond-fill > .Icon-Wrapper {
+    position: absolute;
+    font-size: 20px;
+    z-index: 999;
+    top: 8px;
+    left: 8px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+}
+
+moduleHud .prog-diamond-fill .offsets {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+moduleHud .prog-diamond-fill > .offsets > #fill-fill {
+    height: 30px;
+    width: 30px;
+    stroke-width: 2px;
+    transform: translate(5px,5px);
+    fill: var(--MainBlack);
+    stroke-dasharray: 120;
+    stroke-dashoffset: calc((120 * 0) / 100);
+}
+
+moduleHud .prog-diamond-fill > .offsets > #back-fill {
+    height: 30px;
+    width: 30px;
+    stroke-width: 3px;
+    transform: translate(5px,5px);
+    fill: var(--SecBlack);
+
+}
+
+moduleHud .prog-diamond-fill > .offsets circle,.prog-diamond-fill > .square-fill-progress {
+    display: none;
+}
+
+/************************************************************** Square Fill Progress Bar **************************************************************/
+
+moduleHud .prog-square-fill {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--MainBlack);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+moduleHud .prog-square-fill > .Icon-Wrapper {
+    font-size: 20px;
+    z-index: 999;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+moduleHud .prog-square-fill > .square-fill-progress {
+    height: 32px;
+    width: 4px;
+    border-radius: 5px;
+}
+
+moduleHud .square-fill-progress {
+    background-color: var(--SecBlack);
+    transform: rotate(180deg);
+}
+
+moduleHud .prog-square-fill > svg {
+    display: none;
+}
+
+/************************************************************** Circular Progress Bar **************************************************************/
+
+moduleHud .prog-circular {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 3px solid var(--MainBlack);
+
+}
+
+moduleHud .prog-circular > svg {
+    display: none;
+}
+
+moduleHud .prog-circular > .Icon-Wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 13px;
+}
+
+moduleHud .prog-circular > .Icon-Wrapper > i {
+    color: var(--MainBlack);
+}
+
+
+moduleHud .prog-circular > .fill-progress {
+    width: 100%;
+    height: 50%;
+}
+
+/************************************************************** Square Progress Bar **************************************************************/
+
+moduleHud .prog-square {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border: 3px solid var(--MainBlack);
+    border-radius: 5px;
+}
+
+moduleHud .prog-square > .Icon-Wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 13px;
+}
+
+moduleHud .prog-square > .Icon-Wrapper > i {
+    color: var(--MainBlack);
+}
+
+moduleHud .prog-square > .offsets { 
+    display: none;
+}
+
+moduleHud .prog-square .fill-progress {
+    width: 100%;
+    height: 50%;
+}
+
+/************************************************************** Diamond Progress Bar **************************************************************/
+
+moduleHud .prog-diamond {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-end;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border: 3px solid var(--MainBlack);
+    transform: rotate(45deg);
+}
+
+moduleHud .prog-diamond > .Icon-Wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 13px;
+}
+
+moduleHud .prog-diamond > .Icon-Wrapper > i {
+    color: var(--MainBlack);
+    transform: rotate(-45deg);
+}
+
+moduleHud .prog-diamond > .offsets { 
+    display: none;
+}
+
+moduleHud .prog-diamond .fill-progress {
+    width: 100%;
+    height: 50%;
+}
+
+/************************************************************** Chat **************************************************************/
+moduleHud .MessagesArea {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    background-color: var(--MainBlack);
+    border-radius: 5px;
+    gap: 8px;
+    padding: 16px;
+}
+
+moduleHud .MessagesArea::-webkit-scrollbar {
+    display: none;
+}
+
+moduleHud .MessagesArea > p{
+    color: var(--MainWhite);
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+moduleHud .MessagesArea > p > span {
+    font-weight: 600;
+    color: #00FF85;
+}
+
+moduleHud .InputArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px 0px 16px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--MainBlack);
+    border-radius: 5px;
+}
+
+moduleHud .InputArea > i {
+    font-size: 16px;
+    color: var(--White50);
+}
+
+moduleHud .InputLeft {
+    display: flex;
+    align-items: center;
+}
+
+moduleHud .InputLeft > p {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--White50);
+}
+
+moduleHud .InputLeft > input {
+    height: 100%;
+    width: 275;
+    padding: 0px 8px 0px 8px;
+    background-color: transparent;
+    color: white;
+}
+
+/************************************************************** State **************************************************************/
+
+moduleHud .Time, .Radio, .Location {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    position: relative;
+    align-items: center;
+    background-color: var(--MainBlack);
+    border-radius: 5px;
+}
+
+moduleHud .Time > i, .Radio > i, .Location > i {
+    font-size: 16px;
+    color: var(--DefaultMain);
+}
+
+moduleHud .Time > p, .Radio > p, .Location > p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+}
+
+moduleHud .Radio > p > span, .Location > p > span {
+    font-weight: 600;
+}
+
+moduleHud .Time > div, .Radio > div, .Location > div {
+    position: absolute;
+    left: -1px;
+    height: 50%;
+    width: 3px;
+    background-color: var(--DefaultMain);
+    border-radius: 5px;
+}
+
+/************************************************************** Velocimeter **************************************************************/
+
+moduleHud .Velocimeter {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+}
+
+moduleHud .Speed {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: flex-end;
+}
+
+moduleHud .Speed > p {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+}
+
+moduleHud .Speed > p > span {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    color: var(--DefaultMain)
+}
+
+moduleHud .Speed > .march {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    background-color: var(--MainBlack);
+    bottom: 12px;
+    border-radius: 50%;
+    font-size: 14px;
+    color: white;
+}
+
+moduleHud .SpeedProgress {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--MainBlack);
+    margin-bottom: 5px;
+}
+
+moduleHud .SpeedProgress > div {
+    height: 100%;
+    width: 50%;
+    background: var(--DefaultMain);
+    border-radius: 10px;
+}
+
+moduleHud .CarState {
+    display: flex;
+    gap: 5px;
+    height: 63px;
+    width: 100%;
+}
+
+moduleHud .Bealt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--MainBlack);
+}
+
+moduleHud .Bealt > i {
+    font-size: 20px;
+    color: var(--SecBlack);
+}
+
+moduleHud .Bealt, .active > i {
+    color: var(--DefaultMain);
+}
+
+moduleHud .Fuel {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--MainBlack);
+    padding: 7px;
+}
+
+moduleHud .Fuel > .Fuel-back {
+    height: 45px;
+    width: 6px;
+    border-radius: 5px;
+    background-color: var(--SecBlack);
+    display: flex;
+    align-items: flex-end;
+}
+
+moduleHud .Fuel > .Fuel-back > div {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    background-color: var(--DefaultMain);
+}
+
+moduleHud .Fuel i {
+    font-size: 20px;
+    color: var(--DefaultMain);
+}
+
+moduleHud .CarLife {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--MainBlack);
+    padding: 7px;
+}
+
+moduleHud .CarLife > .CarLife-back {
+    height: 45px;
+    width: 6px;
+    border-radius: 5px;
+    background-color: var(--SecBlack);
+    display: flex;
+    align-items: flex-end;
+}
+
+moduleHud .CarLife > .CarLife-back > div {
+    width: 100%;
+    height: 75%;
+    border-radius: 5px;
+    background-color: var(--DefaultMain);
+}
+
+moduleHud .CarLife i {
+    font-size: 20px;
+    color: var(--DefaultMain);
+}
+
+/************************************************************** Config **************************************************************/
+
+moduleHud .Config > p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--DefaultMain);
+}
+
+moduleHud .Config > i {
+    position: absolute;
+    right: 16px;
+    color: var(--DefaultMain);
+}
+
+moduleHud .Config > .Help {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+    padding: 16px;
+    background-color: var(--MainBlack);
+    border-radius: 5px;
+    display: none;
+}
+
+moduleHud .Config > .Help > .Title {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+moduleHud .Config > .Help > .Description {
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+}
+
+moduleHud .Config > .Help > div{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: var(--MainBlack);
+    right: 10px;
+    bottom: -10px;
+    transform: rotate(45deg);
+}
+
+moduleHud .CfgGrid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+}
+
+moduleHud .CfgGrid > button {
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+}
+
+moduleHud #reset {
+    background-color: var(--ToggleDisabled);
+}
+
+moduleHud #save {
+    background-color: var(--ToggleEnabled);
+}
+
+moduleHud .GridSide {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+moduleHud .GridSide > .HudModel {
+    display: flex;
+    flex-direction: column;
+    height: 86px;
+}
+
+moduleHud .GridSide > .HudModel > .modelIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+moduleHud .GridSide > .HudModel > .modelIcons > div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+moduleHud .GridSide > .HudModel > .modelIcons > div > .square {
+    height: 28px;
+    width: 28px;
+    border: 2px solid var(--DefaultMain);
+}
+
+moduleHud .GridSide > .HudModel > .modelIcons > div > .circle {
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    border: 2px solid var(--DefaultMain);
+}
+
+moduleHud .GridSide > .HudModel > .modelIcons > div > .diamond {
+    height: 23px;
+    width: 23px;
+    border: 2px solid var(--DefaultMain);
+    transform: rotate(45deg);
+}
+
+moduleHud .GridSide > .HudModel > .modelIcons > div > .fill {
+    background-color: var(--DefaultMain);
+}
+
+
+moduleHud .GridSide > div {
+    display: flex;
+    height: 18px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+moduleHud .GridSide > div > p {
+    font-size: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+moduleHud .Toggle {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 32px;
+    height: 14px;
+    background-color: var(--SecBlack);
+    border-radius: 50px;
+}
+
+moduleHud .Point {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: var(--ToggleDisabled);
+    border-radius: 50px;
+    transition: all .2s;
+}
+
+moduleHud .Toggle.active > .Point {
+    background-color: var(--ToggleEnabled);
+    transform: translateX(16px);
+}
+
+moduleHud .Options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+moduleHud .ColorInput {
+    height: 18px;
+    width: 18px;
+    border-radius: 50px;
+    -webkit-appearance: none;
+    border: none;
+}
+
+moduleHud .ColorInput::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 50px;
+    padding: 0;
+}
+
+moduleHud .ColorInput::-webkit-color-swatch {
+    border-radius: 50px;
+    border: none;
+}
+
+moduleHud .outsideLine {
+    position: absolute;
+    left: -1px;
+    top: calc(70% - 55%);
+    height: 70%;
+    width: 3px;
+    border-radius: 5px;
+    background-color: var(--DefaultMain);
+}

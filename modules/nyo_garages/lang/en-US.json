@@ -1,0 +1,32 @@
+{
+    "insufficientMoneyNotify": "Insufficient money!",
+    "insufficientMoneyForTaxNotify": "Insufficient money to pay garage fee!",
+    "isNotAllowedToSpawnCar": "Not allowed!",
+    "vehicleOfThatModelIsAlreadySpawned": "You already have a vehicle of this model outside the garage!",
+    "occupiedCarSpaces": "All car spaces are occupied!",
+    "vehicleIsFar": "Vehicle is too far to be stored!",
+
+    "vehicleCategory": "Category:",
+    "payTax": "Pay Tax",
+    "payInsurance": "Pay Insurance",
+    "spawnVehicle": "Spawn",
+    "storeVehicle": "Store",
+    "maxSpeed": "Speed",
+    "engineHealth": "Engine",
+    "maxBraking": "Brake",
+    "bodyHealth": "Body",
+    "maxTraction": "Traction",
+    "fuelLevel": "Fuel",
+    "taxLate": "Late tax",
+    "vehicleExploded": "Vehicle is exploded",
+    "vehicleImpounded": "Vehicle is impounded",
+    "vehicleOk": "Cleared",
+    "garageType": "Type",
+    "taxLate2": "Tax",
+    "insurance": "Insurance",
+    "garageTax": "Spawn tax",
+    "noTax": "No tax",
+
+    "typeSellPrice": "PRICE",
+    "sellVehicle": "Sell"
+}

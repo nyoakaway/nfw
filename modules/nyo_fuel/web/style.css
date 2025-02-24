@@ -1,0 +1,204 @@
+moduleFuel * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+moduleFuel .Wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: start;
+    align-items: center;
+}
+
+moduleFuel .Container {
+    width: 670px;
+    padding: 16px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+moduleFuel .ImgWrapper {
+    position: relative;
+    width: 280px;
+    height: 160px;
+    background-color: #0075de;
+    right: 24px;
+    bottom: 24px;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+
+moduleFuel .ImgWrapper > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+moduleFuel .Informations {
+    display: flex;
+}
+
+moduleFuel .CarInfos {
+    width: 400px;
+}
+
+moduleFuel .CarInfos > h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+moduleFuel .CarInfos > p {
+    padding: 0;
+    margin: 0;
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+    font-weight: 200;
+}
+
+moduleFuel .Footer {
+    display: flex;
+    height: calc(100% - 160px);
+    gap: 16px;
+}
+
+moduleFuel .Values {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+moduleFuel .Value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+moduleFuel .Value > .title {
+    color: rgba(255,255,255,0.5);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+moduleFuel .Value > .digital {
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Digital-7 Mono', sans-serif;
+    letter-spacing: 4px;
+    background-color: transparent;
+}
+
+moduleFuel .Buttons {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+moduleFuel .Buttons > button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+moduleFuel .BtnTitle {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+moduleFuel .BtnDesc {
+    color: rgba(255,255,255,0.5);
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+moduleFuel .Items {
+    display: flex;
+    gap: 16px;
+}
+
+moduleFuel .Item {
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    width: 140px;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+moduleFuel .Item > img {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+moduleFuel .ItemInfos {
+    display: none;
+}
+
+moduleFuel .Item.active > .ItemInfos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+moduleFuel .NameWrapper {
+    background-color: #0075de;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    z-index: 10;
+
+}
+
+moduleFuel .NameWrapper > p {
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+moduleFuel #Stop.active {
+    background-color: #c50222;
+}
+
+moduleFuel #Start.active {
+    background-color: #0075de;
+}

@@ -1,0 +1,472 @@
+:root {
+    --img-back: url('http://localhost/nfw/identity/textura1.jpg');    
+}
+
+Identity * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif, Arial, Helvetica;
+    
+}
+
+Identity .container__xl {
+
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(20, 20, 20) 98%); */
+   /* background-color: rgb(12, 12, 12);*/
+    color: rgb(255, 255, 255);
+    user-select: none;
+    font-family: 'Montserrat', sans-serif, Arial, Helvetica;
+
+}
+
+Identity .box {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
+    height: 18rem;
+    z-index: 10;
+    border-radius: 1rem;
+    position: relative;
+    background-image: var(--img-back);
+    z-index: 1;
+}
+
+Identity .back__box {
+
+    display: flex;
+    position: absolute;
+    align-items: flex-end;
+    width: 26rem;
+    height: 100%;
+    margin-right: 1rem;
+    overflow: hidden;
+    top: -250px; /* REGULAR ALTURA */
+    
+}
+
+Identity .position {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+/* 
+--------------------------------
+----------- ANIMAÇÃO -----------
+--------------------------------
+*/
+
+Identity .full__space .mid__card, Identity .full__space .mid__indentity {
+
+    transition: ease .6s all;
+
+}
+
+Identity .full__space .sth1:active {
+
+    transform: translateY(-288px);
+
+}
+
+Identity .full__space .sth2:active {
+
+    transform: translateY(-339px);
+
+}
+
+Identity .full__space .sth3:active {
+
+    transform: translateY(-390px);
+
+}
+
+/* -------------------------------- */
+
+Identity .inside__box {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px dashed rgba(255, 255, 255, .4);
+    padding: .25rem 0;
+    border-radius: .5rem;
+    
+}
+
+Identity .cont {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+Identity .cb {
+
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    height: 90%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+Identity .bod__caixa {
+
+    position: absolute;
+    width: 96%;
+    height: 94%;
+    border-top: 1px dashed rgba(220, 220, 220, .4);
+    border-left: 1px dashed rgba(220, 220, 220, .4);
+    border-right: 1px dashed rgba(220, 220, 220, .4);
+    margin-top: .54rem;
+    border-radius: .4rem;
+
+}
+
+Identity .space__sb {
+
+    display: flex;
+    align-items: flex-end;
+    width: 96%;
+    color: #FFFFFF;
+    z-index: 500;
+    margin-bottom: .5rem;
+    border-radius: .4rem;
+    border-bottom: 1px dashed rgba(220, 220, 220, .4);
+
+}
+
+Identity .space__sb img {
+
+    width: 4.8rem;
+
+}
+
+Identity .space__sb .txt {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    font-size: 1.2rem;
+    /* color: #0097FF; */
+
+}
+
+Identity .full__space {
+
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    z-index: 100;  
+
+}
+
+Identity .secret {
+
+    width: 100%;
+    height: 100%;
+    margin-top: 2.4rem;
+    background-image: var(--img-back);
+    border-top: 1px dashed rgb(255, 255, 255);
+    z-index: -1;
+    /* opacity: .9; */
+
+}
+
+/* width e height dos blocos da carteira */
+Identity .mid__card {
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 101%;
+    height: 13.6rem;
+    border-radius: .5rem;
+    z-index: -2;
+
+}
+
+Identity .mid__indentity {
+
+    width: 100%;
+    height: 11.5rem;
+
+}
+
+Identity .infos {
+
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    /* padding-top: .2rem; */
+
+}
+
+Identity .infos .principal__inf {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+Identity .infos .principal__inf p {
+
+    font-size: .68rem;
+    padding: .3rem 0;
+    font-weight: 600;
+    white-space: nowrap;
+
+}
+
+Identity .infos .principal__inf p > span {
+
+    font-size: .66rem;
+    font-weight: 400;
+    /* letter-spacing: 1px; */
+
+}
+
+Identity .gamb__text {
+
+    display: flex;
+
+}
+
+Identity .gamb__text > p:nth-child(1) {
+
+    margin-right: 1.4rem;
+
+}
+
+Identity .sth1 {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("http://localhost/nfw/identity/black_card.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.3rem 2rem 0 2.55rem;
+
+}
+
+Identity .sth2 {
+
+    background: linear-gradient(320deg, rgba(69,69,69,1) 0%, rgba(0,0,0,0.8710462287104623) 100%);
+    padding: .45rem .4rem;
+
+}
+
+Identity .sth3 {
+
+    background-image: url('http://localhost/nfw/identity/black_card.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+Identity .card01 {
+
+    z-index: 101;
+    bottom: -1.8rem;
+
+}
+
+Identity .card02 {
+
+    bottom: -5rem;
+    z-index: 102;
+
+}
+
+Identity .card03 {
+    display: none;
+    bottom: -8.2rem;
+    z-index: 103;
+    
+}
+
+Identity .inside__ind {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    border: 1px dashed rgba(255, 255, 255, .5);
+    padding: .48rem .6rem .48rem .6rem;
+
+}
+
+Identity .flexer {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-top: .6rem;
+
+}
+
+Identity .inside__ind > .title {
+
+    font-size: .78rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    /* text-decoration: underline; */
+    border-bottom: 1px solid rgba(255, 255, 255, .6);
+
+}
+
+Identity .cont__img {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+Identity .cont__img > span {
+
+    font-size: .68rem;
+    margin-top: .52rem;
+
+}
+
+/* TIRAR O . DO IMG PARA TROCAR PARA O IMG NO HTML */
+Identity .cont__img > .img {
+
+    width: 5.4rem;
+    height: 5.4rem;
+    border-radius: 50%;
+    background-image: url(https://media.discordapp.net/attachments/872565816602792038/1020580882668589056/maxresdefault.jpg?width=868&height=488);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+Identity .row {
+
+    --bs-gutter-x: 0 !important;
+
+}
+
+Identity .credito {
+
+    width: 100%;
+    color: rgb(240, 240, 240);
+    white-space: nowrap;
+    /* letter-spacing: 1px; */
+    height: 1.7rem;
+
+}
+
+Identity .credit {
+
+    white-space: nowrap;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #EACF83;
+
+}
+
+Identity .credit img {
+
+    width: 2rem;
+
+}
+
+Identity .credito img {
+
+    width: 1.2rem;
+    margin-right: .4rem;
+    margin-left: .35rem;
+
+}
+
+Identity .cc__value {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+
+}
+
+Identity .cc__value > p > span {
+
+    font-weight: 600;
+    /* color: rgb(105, 255, 100); */
+    /* text-decoration: underline; */
+
+}
+
+Identity .space__nn {
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: rgb(230, 230, 230);
+    margin-top: .5rem;
+    margin-left: .25rem;
+
+}
+
+Identity .number {
+
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+    font-weight: 500;
+    line-height: 1.7rem;
+
+}
+
+Identity .name {
+
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+        
+}

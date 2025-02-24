@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../modules/nyo_fuel/web/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="http://fonts.cdnfonts.com/css/digital-7-mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>fuel</title>
+</head>
+<moduleFuel>
+    <body>
+        <div class="Wrapper">
+            <div class="Container">
+                <div class="Informations">
+                    <div class="ImgWrapper">
+                        <img src="./assets/car.png"></img>
+                    </div>
+                    <div class="CarInfos">
+                        <h1>POSTO DE COMBUSTIVEL</h1>
+                        <div class="Value">
+                            <p class="title litrosText2">VALOR POR LITRO</p>
+                            <p class="digital inputValorFuel">000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Footer">
+                    <div class="Values">
+                        <div class="Value">
+                            <p class="title">VALOR</p>
+                            <p class="digital inputTotalFuel">000</p>
+                        </div>
+                        <div class="Value">
+                            <p class="title litrosText">LITROS</p>
+                            <p class="digital inputLitrosFuel">0L</p>
+                        </div>
+                        <div class="Buttons">
+                            <button id="Stop" onclick="pararAbastecimento()"><p class="BtnTitle">PARAR</p><p class="BtnDesc fuelTextBtnParar">Parar o abastecimento</p></button>
+                            <button id="Start" onclick="iniciarAbastecimento()"><p class="BtnTitle">INICIAR</p><p class="BtnDesc fuelTextBtnIniciar">Iniciar o abastecimento</p></button>
+                        </div>
+                    </div>
+                    <div class="Items">
+                        <div class="Item fuelGalaoContainer" onClick="fuelBuyGalao()">
+                            <div class="ItemInfos">
+                                <p class="fuelGalaoValor">R$ 500</p>
+                            </div>
+                            <img src="https://cdn.discordapp.com/attachments/722187857225318450/999500041402191902/gasoline.png" alt="">
+                            <div class="NameWrapper">
+                                <p>Galão</p>
+                            </div>
+                        </div>
+                        <div class="Item fuelBateriaContainer" onClick="fuelBuyBateria()">
+                            <div class="ItemInfos">
+                                <p class="fuelBaterialValor">R$ 500</p>
+                            </div>
+                            <img src="https://cdn.discordapp.com/attachments/722187857225318450/999500041402191902/gasoline.png" alt="">
+                            <div class="NameWrapper">
+                                <p>Bateria</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </body>    
+    <script src="../modules/nyo_fuel/web/script.js"></script>
+</moduleFuel>
+</html>

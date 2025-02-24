@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../modules/nyo_hud/web/style.css">
+    <title>nyo_hud</title>
+</head>
+<body>
+    <moduleHud style="display:none">
+        <div class="Infos">
+
+            <div class="prog-diamond-fill health">
+                <div class="fill-progress"></div>
+                <div class="square-fill-progress">
+                    <div></div>
+                </div>
+                <div class="Icon-Wrapper">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <svg class="offsets">
+                    <circle id="back-fill" cx="20" cy="20" r="20"></circle>
+                    <circle id="fill-fill" class="health-fill" cx="20" cy="20" r="20"></circle>
+                    <rect id="back-fill" heigth="30" width="30"></rect>
+                    <rect id=fill-fill heigth="30" width="30"></rect>
+                </svg>
+            </div>
+    
+            <div class="prog-diamond-fill armor">
+                <div class="fill-progress"></div>
+                <div class="square-fill-progress">
+                    <div></div>
+                </div>
+                <div class="Icon-Wrapper">
+                    <i class="fa-solid fa-vest"></i>
+                </div>
+                <svg class="offsets">
+                    <circle id="back-fill" cx="20" cy="20" r="20"></circle>
+                    <circle id=fill-fill cx="20" cy="20" r="20"></circle>
+                    <rect id="back-fill" heigth="30" width="30"></rect>
+                    <rect id=fill-fill heigth="30" width="30"></rect>
+                </svg>
+            </div>
+    
+            <div class="prog-diamond-fill hunger">
+                <div class="fill-progress"></div>
+                <div class="square-fill-progress">
+                    <div></div>
+                </div>
+                <div class="Icon-Wrapper">
+                    <i class="fa-solid fa-burger"></i>
+                </div>
+                <svg class="offsets">
+                    <circle id="back-fill" cx="20" cy="20" r="20"></circle>
+                    <circle id=fill-fill cx="20" cy="20" r="20"></circle>
+                    <rect id="back-fill" heigth="30" width="30"></rect>
+                    <rect id=fill-fill heigth="30" width="30"></rect>
+                </svg>
+            </div>
+    
+            <div class="prog-diamond-fill thirst">
+                <div class="fill-progress"></div>
+                <div class="square-fill-progress">
+                    <div></div>
+                </div>
+                <div class="Icon-Wrapper">
+                    <i class="fa-solid fa-wine-glass"></i>
+                </div>
+                <svg class="offsets">
+                    <circle id="back-fill" cx="20" cy="20" r="20"></circle>
+                    <circle id=fill-fill cx="20" cy="20" r="20"></circle>
+                    <rect id="back-fill" heigth="30" width="30"></rect>
+                    <rect id=fill-fill heigth="30" width="30"></rect>
+                </svg>
+            </div>
+
+            <div class="prog-diamond-fill stamine">
+                <div class="fill-progress"></div>
+                <div class="square-fill-progress">
+                    <div></div>
+                </div>
+                <div class="Icon-Wrapper">
+                    <i class="fa-solid fa-person-running"></i>
+                </div>
+                <svg class="offsets">
+                    <circle id="back-fill" cx="20" cy="20" r="20"></circle>
+                    <circle id=fill-fill cx="20" cy="20" r="20"></circle>
+                    <rect id="back-fill" heigth="30" width="30"></rect>
+                    <rect id=fill-fill heigth="30" width="30"></rect>
+                </svg>
+            </div>
+    
+            <!--div class="prog-diamond-fill microfone">
+                <div class="fill-progress"></div>
+                <div class="square-fill-progress">
+                    <div></div>
+                </div>
+                <div class="Icon-Wrapper">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+                <svg class="offsets">
+                    <circle id="back-fill" cx="20" cy="20" r="20"></circle>
+                    <circle id=fill-fill cx="20" cy="20" r="20"></circle>
+                    <rect id="back-fill" heigth="30" width="30"></rect>
+                    <rect id=fill-fill heigth="30" width="30"></rect>
+                </svg>
+            </div-->
+    
+        </div>
+    
+        <!--div class="Chat">
+            <div class="MessagesArea">
+                <p> <span>Felipe Lira:</span> Ola galera </p>
+            </div>
+            <div class="InputArea">
+                <div class="InputLeft">
+                    <p>Equipe:</p>
+                    <input type="text" name="" id="">
+                </div>
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
+        </div-->
+    
+        <div class="Logo">
+                <img src="./assets/logo.png" alt="">
+        </div>
+    
+        <!--div class="Config">
+            <p>Configuraçoes</p>
+            <i class="fa-solid fa-question" id="HelpIcon"></i>
+            <div class="Help">
+                <p class="Title">Ajuda</p>
+                <p class="Description">Arraste os elementos da interface da forma que ache mais confortavel para utilizar</p>
+                <div class="Popover"></div>
+            </div>
+            <div class="outsideLine"></div>
+            <div class="CfgGrid">
+                <div class="GridSide">
+    
+                    <div>
+                        <p>VIDA</p>
+                        <div class="Options">
+                            <div class="Toggle">
+                                <div class="Point"></div>
+                            </div>
+                            <input type="color" class="ColorInput">
+                        </div>
+                    </div>
+    
+                    <div>
+                        <p>COLETE</p>
+                        <div class="Options">
+                            <div class="Toggle">
+                                <div class="Point"></div>
+                            </div>
+                            <input type="color" class="ColorInput">
+                        </div>
+                    </div>
+    
+                    <div>
+                        <p>FOME</p>
+                        <div class="Options">
+                            <div class="Toggle">
+                                <div class="Point"></div>
+                            </div>
+                            <input type="color" class="ColorInput">
+                        </div>
+                    </div>
+    
+                    <div>
+                        <p>SEDE</p>
+                        <div class="Options">
+                            <div class="Toggle">
+                                <div class="Point"></div>
+                            </div>
+                            <input type="color" class="ColorInput">
+                        </div>
+                    </div>
+    
+                    <div>
+                        <p>ESTAMINA</p>
+                        <div class="Options">
+                            <div class="Toggle">
+                                <div class="Point"></div>
+                            </div>
+                            <input type="color" class="ColorInput">
+                        </div>
+                    </div>
+    
+                    <div>
+                        <p>FOLEGO</p>
+                        <div class="Options">
+                            <div class="Toggle">
+                                <div class="Point"></div>
+                            </div>
+                            <input type="color" class="ColorInput">
+                        </div>
+                    </div>
+    
+                    <div>
+                        <p>MICROFONE</p>
+                        <div class="Options">
+                            <div class="Toggle">
+                                <div class="Point"></div>
+                            </div>
+                            <input type="color" class="ColorInput">
+                        </div>
+                    </div>
+    
+                </div>
+                
+                <div class="GridSide">
+    
+                    <div class="HudModel">
+                        <p>Modelo da hud</p>
+                        <div class="modelIcons">
+                            <div>
+                                <div class="square"></div>
+                                <div class="circle"></div>
+                                <div class="diamond"></div>
+                            </div>
+                            <div>
+                                <div class="square fill"></div>
+                                <div class="circle fill"></div>
+                                <div class="diamond fill"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <p>CHAT</p>
+                        <div class="Options">
+                            <div class="Toggle">
+                                <div class="Point"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <p>HORA</p>
+                        <div class="Options">
+                            <div class="Toggle">
+                                <div class="Point"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <p>RUA</p>
+                        <div class="Options">
+                            <div class="Toggle">
+                                <div class="Point"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <p>RADIO</p>
+                        <div class="Options">
+                            <div class="Toggle">
+                                <div class="Point"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <button id="reset">RESETAR</button>
+                <button id="save">SALVAR</button>
+            </div>
+        </div-->
+    
+        <div class="State">
+            <div class="Time">
+                <i class="fa-regular fa-clock"></i>
+                <p class="TimeText">11:32</p>
+                <div></div>
+            </div>
+    
+            <div class="Radio" style="display: none">
+                <i class="fa-solid fa-walkie-talkie"></i>
+                <p class="RadioText"><span>52</span>Mhz</p>
+                <div></div>
+            </div>
+    
+            <div class="Location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="LocationText"><span>Vespucci Boulevard</span></p>
+                <div></div>
+            </div>
+        </div>
+    
+        <div class="Velocimeter" style="display:none">
+            <div class="Speed">
+                <p class="SpeedText">150<span>/KMH</span></p>
+                <div class="march">
+                    <p class="gearText">1</p>
+                </div>
+            </div>
+            <div class="SpeedProgress">
+                <div></div>
+            </div>
+            <div class="CarState">
+                <div class="Bealt active">
+                    <i class="fa-solid fa-bacon"></i>
+                </div>
+    
+                <div class="Fuel">
+                    <div class="Fuel-back">
+                        <div></div>
+                    </div>
+                    <i class="fa-solid fa-gas-pump"></i>
+                </div>
+    
+                <div class="CarLife">
+                    <div class="CarLife-back">
+                        <div></div>
+                    </div>
+                    <i class="fa-solid fa-car"></i>
+                </div>
+            </div>
+        </div>
+    </moduleHud>
+    
+
+    <script src="../modules/nyo_hud/web/script.js"></script>
+</body>
+</html>

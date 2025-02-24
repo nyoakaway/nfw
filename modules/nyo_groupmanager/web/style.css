@@ -1,0 +1,1442 @@
+:root {
+
+    --color-back-p1: #0075DE;
+    --altura-nav-bar: 11%;
+    --color-black: rgba(0,0,0, .8);
+    --color-white: rgba(255, 255, 255, 1);
+
+    --color-border: rgba(206, 212, 218, .2);
+
+    --color-house-v1: rgb(255, 140, 140);
+    --color-house-v2: rgb(140, 255, 125);
+    --color-house-v3: rgb(130, 255, 255);
+    --color-house-v4: rgb(255, 253, 110);
+
+    --color-backgradient: linear-gradient(180deg, rgb(46, 46, 46) 0%, rgba(52,52,52,1) 100%) !important;
+
+}
+
+moduleGoupManager * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+moduleGoupManager body {
+
+    content: "";
+    /* background-color: rgb(48, 48, 48) !important; */
+    /* background-image: url(https://criticalhits.com.br/wp-content/uploads/2021/06/wp7282959.jpg); */
+    width: 100%;
+    height: 100vh;
+    user-select: none;
+    background-repeat: no-repeat;
+
+}
+
+moduleGoupManager .block-c {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+moduleGoupManager .n-container {
+
+    display: flex;
+    width: 80%;
+    height: 65vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    padding: 0 !important; 
+    box-shadow: 0 0 3em rgba(180, 180, 180, .6);
+    border-radius: 1rem 0 1rem 1rem;
+    overflow: hidden;
+
+}
+
+moduleGoupManager .n-container .back {
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    border-radius: 1rem 0 1rem 1rem;
+
+}
+
+moduleGoupManager .container-fluid {
+
+    justify-content: space-between !important;
+
+}
+
+moduleGoupManager .back .n-row {
+
+    display: flex;
+    width: 8%;
+    height: 100%;
+    background-color: var(--color-back-p1);
+    min-width: 6.2rem;
+
+}
+
+moduleGoupManager .row>*, .n-row {
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+moduleGoupManager .n-row .lateral {
+
+    height: 100%;
+    position: relative;
+    width: 100% !important;
+
+}
+
+moduleGoupManager .n-row .lateral .sub {
+
+    flex-wrap: wrap;
+    height: 100%;
+    transition: .5s;
+    overflow: hidden;
+
+}
+
+moduleGoupManager .sub ul li {
+
+    position: relative;
+    list-style: none;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    margin-bottom: 1.8rem;
+    width: 100%;
+
+}
+
+moduleGoupManager .sub ul li a {
+
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--color-white);
+
+}
+
+moduleGoupManager .sub ul li a .icon {
+
+    position: relative;
+    height: 50px;
+    padding: 0 10px ;
+    text-align: center;
+}
+
+
+moduleGoupManager .sub ul li a i {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+moduleGoupManager .sub ul li:hover, moduleGoupManager .sub ul li.hovered {
+
+    background: var(--color-white);
+
+}
+
+moduleGoupManager .sub ul li:hover a, moduleGoupManager .sub ul li.hovered a {
+
+    color: var(--color-back-p1);
+
+}
+
+moduleGoupManager .sub ul li:hover a::before, moduleGoupManager .sub ul li.hovered a::before {
+
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -30px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 20px 0 10px var(--color-white);
+    pointer-events: none;
+
+}
+
+moduleGoupManager .sub ul li:hover a::after, moduleGoupManager .sub ul li.hovered a::after {
+
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px -20px 0 10px var(--color-white);
+    pointer-events: none;
+    
+}
+
+moduleGoupManager .img-top img {
+
+    width: 3rem;
+
+}
+
+moduleGoupManager .navbar .container-fluid p {
+
+    display: flex;
+    align-items: center;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(245, 245, 245)
+
+}
+
+moduleGoupManager .navbar .container-fluid h1 {
+
+    color: rgb(230, 230, 230);
+    font-size: 1rem;
+
+}
+
+moduleGoupManager .navbar .container-fluid p img {
+
+    width: 2.6rem;
+    height: 2.6rem;
+    margin: .4rem .4rem .4rem .8rem;
+    opacity: .8;
+
+}
+
+moduleGoupManager .box {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+
+}
+
+moduleGoupManager ol, ul {
+
+   padding-left: 0 !important; 
+   margin-bottom: 0 !important;
+
+}
+
+moduleGoupManager .margin-lateral {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-left: 27% !important; 
+    padding-top: 18%;
+    padding-bottom: 60%;
+
+}
+
+moduleGoupManager .img-top {
+
+    display: flex;
+    height: var(--altura-nav-bar);
+    min-height: 4rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(163, 163, 163, .35);
+    width: 100%;
+
+}
+
+moduleGoupManager .navbar {
+
+    width: 100%;
+    height: var(--altura-nav-bar);
+    min-height: 4rem;
+    border-bottom: 2px solid rgba(163, 163, 163, .35);
+    padding: 0 !important;
+
+}
+
+moduleGoupManager .lateral-nav {
+
+    text-align: center;
+    width: 100%;
+    overflow: auto;
+    /* background-color: var(--color-back-p1); */
+    height: calc(100% - var(--altura-nav-bar));
+    min-height: 4rem;
+
+}
+
+moduleGoupManager .box-g {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100% - var(--altura-nav-bar));
+    min-height: 4rem;
+    color: #0075DE;
+    padding: 2rem;
+    z-index: 2;
+    overflow: auto;
+
+}
+
+moduleGoupManager .box-g .container {
+
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none;
+    list-style: none;
+}
+
+moduleGoupManager .box-style {
+
+    display: flex;
+    height: 100%;
+    /* background: var(--color-backgradient);
+    box-shadow: 10px 5px 5px rgba(24, 24, 24, 0.4);
+    border: 1px solid rgba(0, 117, 222, .2); */
+    flex-direction: row;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    min-height: 7.3rem;
+    
+}
+
+moduleGoupManager .row section {
+
+    position: relative;
+
+}
+
+moduleGoupManager .box__gamb {
+
+    width: 2rem;
+    height: 2rem;
+
+}
+
+
+/* moduleGoupManager .row > .col, moduleGoupManager .row > .col-1, moduleGoupManager .row > .col-10, moduleGoupManager .row > .col-11,  moduleGoupManager .row > .col-12, moduleGoupManager .row > .col-2, moduleGoupManager .row > .col-3, moduleGoupManager .row > .col-4, moduleGoupManager .row > .col-5, moduleGoupManager .row > .col-6, moduleGoupManager .row > .col-7, moduleGoupManager .row > .col-8, moduleGoupManager .row > .col-9, moduleGoupManager .row > .col-auto, moduleGoupManager .row > .col-lg, moduleGoupManager .row > .col-lg-1, moduleGoupManager .row > .col-lg-10, moduleGoupManager .row > .col-lg-11, moduleGoupManager .row > .col-lg-12, moduleGoupManager .row > .col-lg-2, moduleGoupManager .row > .col-lg-3, moduleGoupManager .row > .col-lg-4, moduleGoupManager .row > .col-lg-5, moduleGoupManager .row > .col-lg-6, moduleGoupManager .row > .col-lg-7, moduleGoupManager .row > .col-lg-8, moduleGoupManager .row > .col-lg-9, moduleGoupManager .row > .col-lg-auto, moduleGoupManager .row > .col-md, moduleGoupManager .row > .col-md-1, moduleGoupManager .row > .col-md-10, moduleGoupManager .row > .col-md-11, moduleGoupManager .row > .col-md-12, moduleGoupManager .row > .col-md-2, moduleGoupManager .row > .col-md-3, moduleGoupManager .row > .col-md-4, moduleGoupManager .row > .col-md-5, moduleGoupManager .row > .col-md-6, moduleGoupManager .row > .col-md-7, moduleGoupManager .row > .col-md-8, moduleGoupManager .row > .col-md-9, moduleGoupManager .row > .col-md-auto, moduleGoupManager .row > .col-sm, moduleGoupManager .row > .col-sm-1, moduleGoupManager .row > .col-sm-10, moduleGoupManager .row > .col-sm-11, moduleGoupManager .row > .col-sm-12, moduleGoupManager .row > .col-sm-2, moduleGoupManager .row > .col-sm-3, moduleGoupManager .row > .col-sm-4, moduleGoupManager .row > .col-sm-5, moduleGoupManager .row > .col-sm-6, moduleGoupManager .row > .col-sm-7, moduleGoupManager .row >.col-sm-8, moduleGoupManager .row > .col-sm-9, moduleGoupManager .row > .col-sm-auto, moduleGoupManager .row > .col-xl, moduleGoupManager .row > .col-xl-1, moduleGoupManager .row > .col-xl-10, moduleGoupManager .row > .col-xl-11, moduleGoupManager .row > .col-xl-12, moduleGoupManager .row > .col-xl-2, moduleGoupManager .row > .col-xl-3, moduleGoupManager .row > .col-xl-4, moduleGoupManager .row > .col-xl-5, moduleGoupManager .row > .col-xl-6, moduleGoupManager .row > .col-xl-7, moduleGoupManager .row > .col-xl-8, moduleGoupManager .row > .col-xl-9, moduleGoupManager .row > .col-xl-auto { */
+/* } */
+moduleGoupManager .row .type1_margin {
+
+    position: relative;
+    padding-right: 1% !important;
+    padding-left: 1% !important;
+    padding-bottom: 2rem !important;
+        
+}
+
+moduleGoupManager .row > .btn {
+
+    margin: .7rem .4rem .7rem .4rem !important;
+    padding: .4rem .6rem .4rem .6rem !important;
+    white-space: nowrap; /* NÃO QUEBRAR LINHA / RESPOSIVIDADE  */
+    font-size: 100%;
+
+}
+
+/* ---------------------------------------- */
+
+/* ------------------------------------------ */
+/* ------------- PRIMEIRO BLOCO ------------- */
+/* ------------------------------------------ */
+
+moduleGoupManager .style1 .barra {
+
+    display: flex;
+    justify-content: center;
+    border-left: 2px solid rgba(34, 34, 34, .8);
+    margin: 0 6% 0 0;
+    height: 5rem;
+
+}
+
+moduleGoupManager .style1 figure .icon {
+
+    width: 3.8rem;
+    height: 3.8rem;
+    margin: 0 1rem;
+    margin-top: .6rem;
+
+}
+
+moduleGoupManager .style1 figure {
+
+    align-items: flex-end;
+    opacity: .6;
+
+}
+
+moduleGoupManager .style1 article h1 {
+
+    color: rgb(175, 175, 175);
+    font-size: 1.1rem !important;
+    text-align: flex-start;
+
+}
+
+moduleGoupManager .style1 article p {
+
+    color: var(--color-white);
+    line-height: 2rem;
+    font-weight: 500;
+    font-size: 1.9rem !important;
+    white-space: nowrap;
+
+}
+
+/* ---------------------------------------- */
+
+/* ----------------------------------------- */
+/* ------------- SEGUNDO BLOCO ------------- */
+/* ----------------------------------------- */
+
+moduleGoupManager .style2 {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.6rem 2rem;
+    
+}
+
+moduleGoupManager .style2 article, moduleGoupManager .style2 figure {
+
+    margin-top: .4rem !important;
+
+}
+
+moduleGoupManager .style2 article h1 {
+
+    color: rgb(175, 175, 175);
+    font-size: 1.1rem !important;
+    text-align: flex-start;
+
+}
+
+moduleGoupManager .style2 article p {
+
+    font-weight: 600;
+    line-height: 2.8rem;
+    letter-spacing: 3px;
+    font-size: 2rem !important;
+}
+
+moduleGoupManager .style2 figure .icon {
+
+    width: 2.6rem;
+    height: 2.6rem;
+    opacity: .7;
+
+}
+
+/* ---------------------------------------- */
+
+/* ----------------------------------------- */
+/* ------------- TERCEIRO BLOCO ------------ */
+/* ----------------------------------------- */
+
+moduleGoupManager .style3 {
+
+    display: flex;
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+    
+}
+
+moduleGoupManager .style3 figure .icon {
+
+    width: 2.6rem;
+    height: 2.6rem;
+    opacity: .9;
+
+}
+
+moduleGoupManager .style3 article p {
+    
+    font-size: 2rem;
+    color: rgba(72, 255, 87, .85);
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+}
+
+moduleGoupManager .style3 .d-flex {
+
+    flex-direction: column;
+
+}
+
+/* ---------------------------------------- */
+
+/* ---------------------------------------- */
+/* ------------- QUARTO BLOCO ------------- */
+/* ---------------------------------------- */
+
+moduleGoupManager .style4 {
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+moduleGoupManager .style4 article h1 {
+
+    font-size: .95rem;
+    color: rgb(175, 175, 175);
+    margin-bottom: .45rem !important;
+
+}
+
+moduleGoupManager .style4 article p {
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(53, 141, 218);
+
+}
+
+/* ---------------------------------------- */
+
+/* -------------------------------------------- */
+/* ------------- ESTILO DO FILTRO ------------- */
+/* -------------------------------------------- */
+
+moduleGoupManager .filter1 {
+
+    border: 2px solid var(--color-border);
+    background: var(--color-backgradient);
+    border-radius: 0 1rem;
+
+}
+
+moduleGoupManager .filter1 p {
+
+    border: 1px solid var(--color-border);
+    color: white;
+    margin: .5rem 1rem !important;
+    padding: .5rem 1rem !important;
+    white-space: nowrap;
+    border-radius: 0 1rem;
+
+}
+
+moduleGoupManager .filter1 p:active, moduleGoupManager .filter1 p:hover {
+
+    border: 1px solid var(--color-back-p1);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: var(--color-white);
+
+}
+
+moduleGoupManager .filter1 moduleGoupManager .row {
+
+    padding: .6rem .2rem;
+
+}
+
+/* ---------------------------------------- */
+
+/* ---------------------------------------- */
+/* ------------- QUINTO BLOCO ------------- */
+/* ---------------------------------------- */
+
+moduleGoupManager .style5 {
+
+    display: flex;
+    /* height: 100%; */
+    width: 100%;
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+
+}
+
+moduleGoupManager .style5 .space {
+
+    margin: 0 3%;
+
+}
+
+moduleGoupManager .style5 form {
+
+    display: flex;
+    margin-bottom: 2rem;
+    width: 100%;
+
+}
+
+moduleGoupManager .style5 form:last-child {
+
+    margin-bottom: .1rem;
+
+}
+
+moduleGoupManager .form-check-input {
+
+    width: 1.3em !important;
+    height: 1.3em !important;
+    background-color: transparent !important;
+    border: 2px solid rgb(130, 130, 130) !important;
+
+}
+
+moduleGoupManager .form-check-input:checked {
+
+    background-color: rgba(255, 255, 255, .3) !important;
+
+}
+
+moduleGoupManager .form-check-label {
+
+    margin-top: .2rem;
+
+}
+
+moduleGoupManager .select-form {
+
+    display: block;
+    width: 100%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+moduleGoupManager .select-form:hover {
+
+    border-color: var(--color-white) !important;
+
+}
+
+moduleGoupManager .select-form {
+
+    background-color: rgb(58, 58, 63);
+    border-color: rgba(206, 212, 218, .3);
+    border-radius: 0;
+    color: rgb(220, 220, 220);
+
+}
+
+moduleGoupManager .form-control {
+
+    height: 2.8rem;
+    font-size: .95rem !important;
+    color: rgb(200, 200, 200) !important;
+    background-color: rgb(58, 58, 63) !important;
+    border-radius: 0 !important;
+    border-color: rgba(206, 212, 218, .3) !important;
+    width: 100%;
+
+}
+
+moduleGoupManager .form-range {
+
+    width: 30% !important;
+
+}
+
+moduleGoupManager .form-label {
+
+    margin-bottom: .4rem !important;
+
+}
+
+moduleGoupManager form div {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+moduleGoupManager .button input {
+
+    margin-right: .3rem;
+
+}
+
+moduleGoupManager label, label {
+
+    color: rgb(180, 180, 180);
+
+}
+
+moduleGoupManager .color {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+moduleGoupManager .color label {
+
+    display: flex;
+    justify-content: flex-start !important;
+
+}
+
+moduleGoupManager .select-form {
+
+    width: 60%;
+
+}
+
+moduleGoupManager .check {
+
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+
+}
+
+moduleGoupManager .btn-outline-primary {
+
+    --bs-btn-color: var(--color-back-p1) !important;
+    --bs-btn-border-color: var(--color-back-p1) !important;
+    --bs-btn-hover-bg: var(--color-back-p1) !important; 
+    --bs-btn-hover-border-color: var(--color-back-p1) !important; 
+    --bs-btn-active-bg: var(--color-back-p1) !important;
+    --bs-btn-active-border-color: var(--color-back-p1) !important; 
+    --bs-btn-disabled-color: var(--color-back-p1) !important;
+    --bs-btn-disabled-border-color: var(--color-back-p1) !important;
+
+}
+
+
+/* ---------------------------------------- */
+
+/* ---------------------------------------- */
+/* ------------- SEXTO BLOCO ------------- */
+/* ---------------------------------------- */
+
+moduleGoupManager .grafic {
+
+    height: 100% !important;
+
+}
+
+moduleGoupManager .container .style6 {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+
+}
+
+moduleGoupManager .style6 .head {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1.5rem;
+
+}
+
+moduleGoupManager .style6 article {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+
+}
+
+moduleGoupManager .style6 h1 {
+
+    width: 50%;
+    font-size: 1.1rem;
+
+}
+
+moduleGoupManager .style6 .box-box {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+/* ---------------------------------------- */
+
+/* ---------------------------------------- */
+/* ------------- SETIMO BLOCO ------------- */
+/* ---------------------------------------- */
+
+moduleGoupManager .style7 .card-body {
+
+    padding: 0 !important;
+
+}
+
+moduleGoupManager .style7 .footer-margin {
+
+    padding: 0 1rem 1.2rem 1rem !important;
+
+}
+ 
+moduleGoupManager .style7 .card-text {
+
+    color: rgba(220,220,220);
+    font-size: .9rem;
+    margin: 1rem 0 .6rem 0 !important;
+
+}
+
+moduleGoupManager .style7 .card-title {
+
+    margin: 1rem 0 !important;
+    font-size: 1.6rem;
+    color: var(--color-white);
+    letter-spacing: 1px;
+
+}
+
+moduleGoupManager .style7 .carousel-item {
+
+    border-bottom: 1px solid rgba(206, 212, 218, 0.2) !important;
+
+}
+
+moduleGoupManager .style7 .card  {
+
+    border-radius: 0 0 0 0 !important;
+    background: var(--color-backgradient);
+    border: 1px solid var(--color-border);
+
+}
+
+moduleGoupManager .style7 img {
+
+    border-radius: 0 !important;
+    width: 100% !important;
+
+}
+
+moduleGoupManager .sty7 {
+
+    overflow: hidden;
+
+}
+
+moduleGoupManager .sty7 > section {
+
+    box-shadow: -5px 10px 12px 0px rgba(24, 24, 24, 0.4);
+
+}
+
+moduleGoupManager .style7 .row .coli {
+
+    margin: 1rem .55rem 0 .55rem !important;
+
+}
+
+/* -------------------------------------------------------- */
+/* ------------- ESTILO DA FITA DE BLOQUEADO  ------------- */
+/* -------------------------------------------------------- */
+
+moduleGoupManager .blocked {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute !important;
+    height: 100%;
+    width: 100%;
+    color: var(--color-white);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+
+}
+
+moduleGoupManager .block-fundo {
+
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    background-color: rgba(255, 120, 120, .4);
+    transform: rotate(-20deg);
+    margin-bottom: .5rem;
+    width: 110%;
+    height: 2rem;
+    z-index: 20;
+
+}
+
+moduleGoupManager .blocked h1 {
+
+    font-size: 1.2rem;
+    letter-spacing: 8px;
+
+}
+
+/* -------------------------------------------------------- */
+
+/* ------------------------------------------------------------ */
+/* ------------- ESTILO DO VALOR VALOR DO IMÓVEL  ------------- */
+/* ------------------------------------------------------------ */
+
+moduleGoupManager .card .valor {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute !important;
+    background-color: rgb(38, 38, 38);
+    border-left: 2px solid rgba(83, 85, 86);
+    border-bottom: 2px solid rgba(83, 85, 86);
+    color: rgba(250, 250, 250, 1);
+    border-radius: 0 0 0 .8rem;
+    padding: .5rem .8rem;
+    letter-spacing: 1px;
+    font-size: 120%;
+    font-weight: 500;
+    z-index: 2;
+
+}
+
+moduleGoupManager .bb-color1 {
+
+    box-shadow: -2px 2px 8px 1px var(--color-house-v1);
+    
+}
+
+moduleGoupManager .bb-color2 {
+
+    box-shadow: -2px 0px 8px 1px var(--color-house-v2);
+    
+}
+
+moduleGoupManager .bb-color3 {
+
+    box-shadow: -2px 0px 8px 1px var(--color-house-v3);
+    
+}
+
+moduleGoupManager .bb-color4 {
+
+    box-shadow: -2px 0px 8px 1px var(--color-house-v4);
+    
+}
+
+moduleGoupManager .card .etiqueta {
+
+    position: absolute !important;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+
+}
+
+/* ------------------------------------------------ */
+
+/* --------------------------------------------- */
+/* ------------- ESTILO DA TABELA  ------------- */
+/* --------------------------------------------- */
+
+/* moduleGoupManager .table {
+
+    margin-bottom: 0 !important;
+    border-color: transparent !important;
+    color: white !important;
+
+}
+
+moduleGoupManager .table thead tr:first-child {
+
+    border-bottom: 2px solid var(--color-border);
+
+}
+
+moduleGoupManager .table .number {
+
+    border-right: 2px solid var(--color-border);
+
+}
+
+moduleGoupManager .table tr th:first-child {
+
+    border-right: 2px solid var(--color-border);
+
+}
+
+moduleGoupManager .table thead th p, .table .number p {
+
+    color: rgb(242, 242, 242);
+
+} 
+
+moduleGoupManager .table td, .table th {
+
+    height: 3.5rem !important;
+
+}
+
+moduleGoupManager .table tr th p {
+
+    font-size: 90%;
+
+}
+
+moduleGoupManager .table tr td p {
+
+    font-size: 85%;
+    color: rgb(240, 240, 240);
+
+}
+
+moduleGoupManager .table p {
+
+    display: flex;
+    width: 100%;
+    height: 100%;s
+    align-items: center;
+    justify-content: center;
+
+} */
+
+
+moduleGoupManager .table {
+
+    margin-bottom: 0 !important;
+
+}
+
+/* ------------------------------------------------ */
+
+moduleGoupManager .style8 {
+
+    border: 2px solid rgba(0, 117, 222, .2);   
+    /* rgba(206, 212, 218, .2)  */
+
+}
+
+moduleGoupManager .type__mt {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .8rem;
+    padding: 0 2%;
+
+}
+
+moduleGoupManager .type__mo {
+
+    padding: 0 4% !important;
+    margin-bottom: 1.2rem;
+
+}
+
+moduleGoupManager .text__style {
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: var(--color-white);
+
+}
+
+moduleGoupManager .type1__pad1 {
+
+    padding: 0 4%;
+
+}
+
+moduleGoupManager button {
+
+    background-color: transparent;
+    border: none;
+
+}
+
+moduleGoupManager .carousel-indicators {
+
+    align-items: center;
+    margin-bottom: .2rem !important;
+    margin: 0 1.2% 0 4.18% !important;
+    /* 1.5% */
+
+}
+
+moduleGoupManager .table-striped-columns>:not(caption)>tr>:nth-child(2n) {
+
+    background-color: rgb(70, 70, 70);
+        
+}
+
+moduleGoupManager .card .info {
+
+    z-index: 3;
+
+}
+
+moduleGoupManager input, select {
+
+    box-shadow: none !important;
+
+}
+
+moduleGoupManager .box-box img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+moduleGoupManager .titulo__geral {
+
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-white);
+
+}
+
+moduleGoupManager .uni__txt {
+
+    margin-bottom: .8rem;
+
+}
+
+moduleGoupManager .d1__flex {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1.2rem 0 .3rem 0 !important;
+
+}
+
+moduleGoupManager .fl__center {
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+moduleGoupManager .correct__mar {
+
+    padding-top: .6rem !important;
+
+}
+
+moduleGoupManager .box__in1 h1 {
+
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--color-white);
+    padding-top: .1rem;
+
+}
+
+moduleGoupManager .box__in1 p {
+
+    font-size: .9rem;
+
+}
+
+moduleGoupManager .style__N1 {
+
+    justify-content: space-between !important;
+    height: 100% !important;
+
+}
+
+moduleGoupManager .box__in1 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 4.8rem;
+
+}
+
+moduleGoupManager .style__N1 figure i {
+ 
+    font-size: 2.75rem;
+    opacity: .6;
+
+}
+
+moduleGoupManager .new {
+
+    position: relative;
+    border: none;
+    --bs-border-color: rgb(255, 255, 255);
+    
+}
+
+moduleGoupManager .new:after, .new:before {
+
+    content: "";
+    position: absolute;
+
+}
+
+moduleGoupManager .new:before {
+
+    left: 15px;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    border-top: 1px solid rgba(255, 255, 255, .8);
+    border-bottom: 1px solid rgba(255, 255, 255, .8);
+    opacity: .3;
+    
+}
+
+moduleGoupManager .new:after {
+
+    top: 15px;
+    bottom: 15px;
+    right: 0;
+    left: 0;
+    border-left: 1px solid rgba(255, 255, 255, .8);
+    border-right: 1px solid rgba(255, 255, 255, .8);
+    opacity: .3;
+
+}
+
+moduleGoupManager .card-arrow-bottom-left:before, moduleGoupManager .card-arrow-bottom-right:before, moduleGoupManager .card-arrow-top-left:before, moduleGoupManager .card-arrow-top-right:before {
+
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background: var(--bs-border-color);
+    opacity: .75;
+
+}
+
+moduleGoupManager .card-arrow-bottom-left:after, moduleGoupManager .card-arrow-bottom-right:after, moduleGoupManager .card-arrow-top-left:after, moduleGoupManager .card-arrow-top-right:after {
+
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: var(--bs-border-color);
+    opacity: .75;
+
+}
+
+moduleGoupManager .card-arrow-bottom-left:before, moduleGoupManager .card-arrow-bottom-right:before, moduleGoupManager .card-arrow-top-left:before, moduleGoupManager .card-arrow-top-right:before {
+
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background-color: var(--bs-border-color);
+    opacity: .75;
+
+}
+
+moduleGoupManager .card-arrow {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -10 !important;
+
+}
+
+moduleGoupManager .card-arrow-top-left, moduleGoupManager .card-arrow-top-right, moduleGoupManager .card-arrow-bottom-left, moduleGoupManager .card-arrow-bottom-right {
+
+    z-index: -10;
+
+}
+
+moduleGoupManager .card-arrow-bottom-left, moduleGoupManager .card-arrow-bottom-right, moduleGoupManager.card-arrow-top-left, moduleGoupManager .card-arrow-top-right {
+
+    width: 10px;
+    height: 10px;
+    position: absolute;
+
+}
+
+moduleGoupManager .card-arrow-bottom-right:after, moduleGoupManager .card-arrow-bottom-right:before, moduleGoupManager .card-arrow-top-right:after, moduleGoupManager .card-arrow-top-right:before {
+
+    right: 0;
+
+}
+
+moduleGoupManager .card-arrow-bottom-left:after, moduleGoupManager .card-arrow-bottom-left:before, moduleGoupManager .card-arrow-top-left:after, moduleGoupManager .card-arrow-top-left:before {
+
+    left: 0;
+
+}
+
+moduleGoupManager .card-arrow-bottom-right:after, moduleGoupManager .card-arrow-bottom-right:before, moduleGoupManager .card-arrow-top-right:after, moduleGoupManager .card-arrow-top-right:before {
+
+    bottom: 2px;
+
+}
+
+moduleGoupManager .card-arrow-bottom-left:before {
+
+    bottom: 2px;
+
+}
+
+moduleGoupManager .card-arrow-bottom-left, .card-arrow-top-left {
+
+    left: 0;
+
+}
+
+moduleGoupManager .card-arrow-bottom-right, .card-arrow-top-right {
+
+    right: 0;
+    
+}
+
+moduleGoupManager .card-arrow-top-left:before, .card-arrow-top-right:before {
+
+    top: 2px;
+
+}
+
+moduleGoupManager .card-arrow-top-left:after, .card-arrow-top-right:after {
+
+    top: 0;
+
+}
+
+moduleGoupManager .card-arrow-bottom-left:after, .card-arrow-bottom-right:after {
+
+    bottom: 0;
+
+}
+
+moduleGoupManager .card-arrow-bottom-left, .card-arrow-bottom-right {
+
+    bottom: 0;
+
+}
+
+moduleGoupManager .hw1 {
+
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .15);
+    width: 100%;
+    min-height: 7.3rem;
+    padding: 10px;
+        
+}
+
+moduleGoupManager .z-ind, .btn {
+
+    z-index: 100 !important;
+
+}
+
+moduleGoupManager *, moduleGoupManager::after, moduleGoupManager::before {
+
+    box-sizing: border-box;
+    
+}
+
+moduleGoupManager .carousel-indicators [data-bs-target] {
+
+    height: 2px !important;
+
+}
+
+moduleGoupManager input[type="range"]::-webkit-slider-thumb {
+
+    background-color: rgba(255, 255, 255, .9) !important;
+    border: 2px solid rgb(102, 102, 102) !important;
+    box-shadow: none !important;
+
+}
+
+moduleGoupManager input[type="range"]::-webkit-slider-thumb:hover {
+
+    border-color: transparent !important;
+    border: 3px solid rgb(40, 40, 40)!important;
+
+}
+  
+moduleGoupManager input[type=range]::-webkit-slider-runnable-track  {
+
+    background-color: var(--color-border) !important;
+
+}
+
+moduleGoupManager h1, moduleGoupManager .h2, moduleGoupManager .h3, moduleGoupManager .h4, moduleGoupManager .h5, moduleGoupManager .h6, moduleGoupManager p, moduleGoupManager figure {
+
+    margin: 0 !important;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+
+}
+
+moduleGoupManager *::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .5);
+    background-color: transparent;
+}
+
+moduleGoupManager *::-webkit-scrollbar {
+    width: 2px;
+    background-color: transparent;
+}
+
+moduleGoupManager *::-webkit-scrollbar-thumb {
+    background-color: var(--color-white);
+}
