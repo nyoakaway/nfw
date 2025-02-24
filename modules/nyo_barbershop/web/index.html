@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../modules/nyo_barbershop/web/styles.css">
+        <link rel="stylesheet" href="../modules/nyo_barbershop/web/128157c685864bcae8bac195f57075f2ba08f9ac.css">
+    </head>
+    <moduleBarberShop>
+        <body>
+            <main id="mainBarberShop">
+                <header lang="ui-title"></header>
+                <div class="flexBarberShop">
+                    <aside>
+                        <div class="categoryBarberShop flex-centerBarberShop activeMBarberShop" onclick="selectBarberPart(this)" data-idpart="12" data-idmenu ="E" data-titulo="Cabelo"><i class="icon-cabelo icon-fs2x"></i></div>
+                        <div class="categoryBarberShop flex-centerBarberShop" onclick="selectBarberPart(this)" data-idpart="1" data-idmenu ="E" data-titulo="Barba"><i class="icon-barba icon-fs2x"></i></div>
+                        <div class="categoryBarberShop flex-centerBarberShop" onclick="selectBarberPart(this)" data-idpart="2" data-idmenu ="E" data-titulo="Sombrancelha"><i class="icon-sombrancelha icon-fs2x"></i></div>
+                        <div class="categoryBarberShop flex-centerBarberShop" onclick="selectBarberPart(this)" data-idpart="9" data-idmenu ="E" data-titulo="Sardas"><i class="icon-sardas icon-fs2x"></i></div>
+                        <div class="categoryBarberShop flex-centerBarberShop" onclick="selectBarberPart(this)" data-idpart="10" data-idmenu ="E" data-titulo="Pelos do Peito"><i class="icon-torso icon-fs2x"></i></div>
+                        <div class="categoryBarberShop flex-centerBarberShop" onclick="selectBarberPart(this)" data-idpart="4" data-idmenu ="E" data-titulo="Maquiagem"><i class="icon-maquiagem icon-fs2x"></i></div>
+                        <div class="categoryBarberShop flex-centerBarberShop" onclick="selectBarberPart(this)" data-idpart="8" data-idmenu ="E" data-titulo="Batom"><i class="icon-batom icon-fs2x"></i></div>
+                        <div class="categoryBarberShop flex-centerBarberShop" onclick="selectBarberPart(this)" data-idpart="3" data-idmenu ="E" data-titulo="Envelhecimento"><i class="icon-envelhecimento icon-fs2x"></i></div>
+                        <div class="categoryBarberShop flex-centerBarberShop" onclick="selectBarberPart(this)" data-idpart="5" data-idmenu ="E" data-titulo="Blush"><i class="icon-blush icon-fs2x"></i></div>
+                        <div class="categoryBarberShop flex-centerBarberShop" onclick="selectBarberPart(this)" data-idpart="6" data-idmenu ="E" data-titulo="Rugas"><i class="icon-rugas icon-fs2x"></i></div>
+                    </aside>
+                    <section>
+                        <div class="title">
+                            <div class="cart flex-centerBarberShop"><i class="fal fa-shopping-cart"></i></div>
+                            <div class="cart-info">
+                                <span lang="ui-header-title"></span>
+                                <small><span lang="ui-header-cart"></span><span id="precoTotalBarberShop"></span></small>
+                            </div>
+                            <div class="search">
+                                <small lang="ui-search-field"></small>
+                                <input lang="ui-search-input-placeholder" type="text" id="searchBarberShop" onkeyup="searchBarberShop('')">
+                            </div>
+                        </div>
+                        <div class="shop-content">
+                            <div class="listagemBarberShop">
+               
+
+                            </div>                             
+                        </div>
+                        
+                        <div class="color-iconBarberShop flex-centerBarberShop"><i class="fal fa-palette"></i></div>
+                        <div class="shop-color">                            
+                            <div class="color-contentBarberShop" style="opacity: 0;" id="corBarberShop">
+                               
+                                
+                            </div>
+                        </div>
+    
+                        <div class="shop-footer">
+                            <div class="input-footer">
+                                <label lang="ui-footer-label"></label><br>
+                                <input class="rangeBarberShop" type="range" id="rotacaoBarberShop" oninput="barberRotate(this.value)"value="0" min="0" max="360">
+                            </div>
+                            <div class="action-buy" onClick="paymentBarberShop()">
+                                <div class="info-footer styleAug flex-centerBarberShop" data-augmented-ui="r-scoop" lang="ui-finalize-button"></div>
+                                <button class="flex-centerBarberShop"><i class="fal fa-shopping-bag"></i></button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+    
+            <camBarberShop>
+                <div class="item icon">
+                    <i class="fal fa-camcorder"></i>
+                </div>
+                <div class="item" onClick="barbershopChangeCam('all')">
+                    <i class="icon-corpo"></i>
+                </div>
+                <div class="item" onClick="barbershopChangeCam('head')">
+                    <i class="icon-rosto"></i>
+                </div>
+                <div class="item" onClick="barbershopChangeCam('torso')">
+                    <i class="icon-torso"></i>
+                </div>
+                <div class="item" onClick="barbershopChangeCam('shoes')">
+                    <i class="icon-perna"></i>
+                </div>
+                <div class="item" onClick="barbershopChangeCam('foot')">
+                    <i class="icon-pes"></i>
+                </div>
+            </camBarberShop>
+        </body>
+        
+
+    </moduleBarberShop>
+    <script src="../modules/nyo_barbershop/web/script.js"></script>
+
+    <script>
+        $('#rotacaoBarberShop').on('input', function(e){
+        var min = e.target.min,
+            max = e.target.max,
+            val = e.target.value;
+        
+            $(e.target).css({
+                'background-image': ('linear-gradient(#4060AA,#4060AA)'),
+                'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
+            });
+        });// .trigger('input')
+
+
+        var colorBarberShop = true
+        $('.color-iconBarberShop').on('click', function() {
+            if (colorBarberShop) {
+                colorBarberShop = false
+                $('.color-contentBarberShop').addClass('animarColorBarberShop');
+                $('.color-contentBarberShop').removeClass('animarColorCloseBarberShop');
+            } else {
+                colorBarberShop = true
+                $('.color-contentBarberShop').removeClass('animarColorBarberShop');
+                $('.color-contentBarberShop').addClass('animarColorCloseBarberShop');
+            }
+        });
+
+        let camBarberShop = true
+        $('camBarberShop .icon').on('click', function() {
+            if (camBarberShop) {
+                camBarberShop = false
+                $('camBarberShop .item:nth-child(2)').animate({opacity: 1}, 200);
+                $('camBarberShop .item:nth-child(3)').animate({opacity: 1}, 500);
+                $('camBarberShop .item:nth-child(4)').animate({opacity: 1}, 800);
+                $('camBarberShop .item:nth-child(5)').animate({opacity: 1}, 1100);
+                $('camBarberShop .item:nth-child(6)').animate({opacity: 1}, 1400);
+            } else {
+                camBarberShop = true
+                $('camBarberShop .item:nth-child(6)').animate({opacity: 0}, 200);
+                $('camBarberShop .item:nth-child(5)').animate({opacity: 0}, 500);
+                $('camBarberShop .item:nth-child(4)').animate({opacity: 0}, 800);
+                $('camBarberShop .item:nth-child(3)').animate({opacity: 0}, 1100);
+                $('camBarberShop .item:nth-child(2)').animate({opacity: 0}, 1400);
+            }
+        });
+    </script>
+</html>
