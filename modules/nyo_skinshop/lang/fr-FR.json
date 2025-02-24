@@ -1,0 +1,10 @@
+{
+    "ui-title": "Magasin de vêtements",
+    "ui-header-title": "Bienvenue,",
+    "ui-header-cart": "votre panier : ",
+    "ui-currency-symbol": "€",
+    "ui-search-field": "recherche",
+    "ui-search-input-placeholder": "nombre",
+    "ui-footer-label": "rotation des caractères",
+    "ui-finalize-button": "finaliser"
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../modules/nyo_routes/web/reset.css" />
+		<link rel="stylesheet" href="../modules/nyo_routes/web/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
+		<title>nyo_routes</title>
+	</head>
+	<body>
+		<div class="routes-UI">
+			<div class="container-routes">
+				<div class="container-select-routes">
+					<div class="container-select-header-routes">
+						<div class="container-select-header-infos-routes">
+							<p id="routes-ui-title">Rotas disponíveis</p>
+						</div>
+						<div class="container-select-header-search-routes">
+							<button><i class="fas fa-search"></i></button>
+							<input type="text" placeholder="Pesquisa" id="routes-ui-search-field"/>
+						</div>
+					</div>
+					<div class="container-select-items-routes">
+						<div class="container-select-items-buttons-routes">
+							<button><i class="fas fa-search"></i></button>
+							<button><i class="fas fa-search"></i></button>
+							<button><i class="fas fa-search"></i></button>
+							<button><i class="fas fa-search"></i></button>
+							<button><i class="fas fa-search"></i></button>
+							<button><i class="fas fa-search"></i></button>
+							<button><i class="fas fa-search"></i></button>
+							<button><i class="fas fa-search"></i></button>
+							<button><i class="fas fa-search"></i></button>
+							<button><i class="fas fa-search"></i></button>
+							<button><i class="fas fa-search"></i></button>
+							<button><i class="fas fa-search"></i></button>
+							<button><i class="fas fa-search"></i></button>
+						</div>
+						<ul class="container-select-items-list-routes">
+							<li class="container-select-items-list-item-routes">
+								<img
+									src="../modules/nyo_routes/web/assets/divingsuit.png"
+								/>
+								<div>
+									<p>Traje de mergulho</p>
+									<small
+										><i class="far fa-clock"></i> 20
+										Segundos</small
+									>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="container-selected-routes">
+					<div class="container-selected-header-routes">
+						<div class="container-selected-header-infos-routes">
+							<p>Traje de mergulho</p>
+							<small>Categoria utilitarios</small>
+						</div>
+						<img
+							id="header-item-routes"
+							src="../modules/nyo_routes/web/assets/divingsuit.png"
+						/>
+						<img
+							id="header-stars-routes"
+							src="../modules/nyo_routes/web/assets/stars.png"
+						/>
+					</div>
+					<div class="container-selected-content-routes">
+						<div class="container-selected-content-title-routes">
+							<small class="active-route-routes">RECURSOS NECESSARIOS</small>
+							<small>|</small>
+							<small>RECURSOS RESULTANTES</small>
+						</div>
+						<ul class="container-selected-content-resources-routes">
+							<li
+								class="container-selected-content-resources-item-routes"
+							>
+								<img
+									src="../modules/nyo_routes/web/assets/divingsuit.png"
+								/>
+								<p>1/10 Borracha</p>
+							</li>
+						</ul>
+						<div class="container-selected-content-finalize-routes">
+							<div
+								class="container-selected-content-finalize-infos-routes"
+							>
+								<p
+									class="container-selected-content-finalize-infos-time-routes"
+								>
+									<i class="far fa-clock"></i> 20 Segundos
+								</p>
+								<div
+									class="container-selected-content-finalize-infos-buttons-routes"
+								>
+									<button
+										class="container-selected-content-finalize-button-cancel-routes"
+									>
+										FINALIZAR
+									</button>
+									<button
+										class="container-selected-content-finalize-button-create-routes"
+									>
+										CRIAR
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../modules/nyo_routes/web/script.js"></script>
+	</body>
+</html>

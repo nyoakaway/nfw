@@ -1,0 +1,13 @@
+{
+    "onRouteStart": "Você iniciou a rota!",
+    "onRouteStop": "Você finalizou a rota!",
+    "insufficientItems": "Itens insuficientes!",
+    "insufficientSpaceInInventory": "Você não possui espaço na mochila!",
+    "onSuccessToCollectItem": "Você recebeu $amount x de $name ",
+    "ui-title": "Rotas disponíveis",
+    "ui-search-field": "Pesquisar",
+    "ui-start-button": "Inciar",
+    "ui-stop-button": "Finalizar",
+    "ui-subtitle-1": "Recursos resultantes",
+    "ui-subtitle-2": "Recursos necessários"
+}

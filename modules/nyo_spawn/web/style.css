@@ -1,0 +1,142 @@
+moduleSpawn table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+moduleSpawn button {
+    border: none;
+    outline: none;
+}
+
+moduleSpawn .screen-spawnmap {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+moduleSpawn .leaflet-control-attribution {
+    display: none;
+}
+
+moduleSpawn .modal-spawnmap {
+    position: absolute;
+    display: none;
+    width: 400px;
+    padding: 16px;
+    flex-direction: column;
+    z-index: 800;
+    background-color: #153e6a;
+    border-radius: 5px;
+    color: #fff;
+    gap:16px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    animation: ScaleUp 0.5s;
+}
+
+moduleSpawn .SpawnImgWrapper {
+    position: absolute;
+    top: -100px;
+    width: calc(100% - 32px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+moduleSpawn .SpawnImgWrapper > img {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    height: 150px;
+    border-radius: 5px;
+    z-index: 1;
+    filter: brightness(60%);
+}
+
+moduleSpawn .modalTextDesc {
+    padding-top: 75px;
+}
+
+moduleSpawn .SpawnImgWrapper > h1 {
+    margin-bottom: 55px;
+    z-index: 10;
+    font-size: 24px;
+}
+
+moduleSpawn .modal-spawnmap > h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+moduleSpawn .modal-spawnmap > p {
+    margin-bottom: 0px; 
+}
+
+moduleSpawn .modal-spawnmap > hr {
+    margin: 2px;
+    padding: 2px;
+}
+
+moduleSpawn .modal-spawnmap> p > span {
+    font-weight: 800;    
+}
+
+moduleSpawn .modal-buttons-spawnmap {
+    display: flex;
+    gap: 10px;
+}
+
+moduleSpawn .modal-buttons-spawnmap > button {
+    width: 100%;
+    border-radius: 5px;
+    height: 35px;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.2s;
+    backface-visibility: hidden;
+}
+
+moduleSpawn .modal-buttons-spawnmap > button:hover {
+    transform: scale(1.05);
+}
+
+moduleSpawn .modal-buttons-spawnmap > button:nth-child(1) {
+    background-color: #ca0000;
+}
+
+moduleSpawn .modal-buttons-spawnmap > button:nth-child(2) {
+    background-color: #0075DE;
+}
+
+moduleSpawn .modal-buttons-spawnmap > button:nth-child(2):hover {
+    background-color: #0160b4;
+}
+
+moduleSpawn .modal-buttons-spawnmap > button:nth-child(1):hover {
+    background-color: rgb(161, 0, 0);
+}
+
+moduleSpawn #map-spawnmap img {
+    max-height: none;
+}
+
+moduleSpawn #map-spawnmap {
+    height: 90vh;
+    width: 90vw;
+    background-color:#153e6a;
+    border-radius: 5px;
+}
+
+@keyframes ScaleUp {
+    0% { transform: scale3d(0.96,0.96,1); }
+    20% { transform: scale3d(1.1,1.1,1); }
+    40% { transform: scale3d(0.98,0.98,1); }
+    60% { transform: scale3d(1.05,1.05,1); }
+    80% { transform: scale3d(1.01,1.01,1); }
+    100% { transform: scale3d(1,1,1); }
+}

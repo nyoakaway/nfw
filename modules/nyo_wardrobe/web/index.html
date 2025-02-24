@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="../modules/nyo_wardrobe/web/style.css">
+</head>
+
+<moduleWardrobe>
+    <body>
+        <div id="mainGuardaRoupa">
+            <header>Guarda Roupa</header>
+            <div class="flexGuardaRoupa">
+                <aside>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa activeMGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="mascara" data-titulo="Mascara"><i class="icon-mascara icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="bone" data-titulo="Chapeu"><i class="icon-chapeu icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="camisa" data-titulo="Camisa"><i class="icon-camisa icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="jaqueta" data-titulo="Jaqueta"><i class="icon-jaqueta icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="calca" data-titulo="Calça"><i class="icon-calca icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="sapato" data-titulo="Sapato"><i class="icon-sapato icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="mochila" data-titulo="Mochila"><i class="icon-mochila icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="oculos" data-titulo="Oculos"><i class="icon-oculos icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="brinco" data-titulo="Brinco"><i class="icon-brincos icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="relogio" data-titulo="Relogio"><i class="icon-relogio icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="gravata" data-titulo="Gravata/Acessorio"><i class="icon-gravata icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="colete" data-titulo="Colete"><i class="icon-colete icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="mao" data-titulo="Maos"><i class="icon-maos icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="bracelete" data-titulo="Pulseira"><i class="icon-pulseira icon-fs2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="decals" data-titulo="Adesivos"><i class="fab fa-hive fa-2x"></i></div>
+                    <div class="categoryGuardaRoupa flex-centerGuardaRoupa" onclick="selectGuardaPart(this)" data-idpart="outfit" data-titulo="Outfit"><i class="icon-pulseira icon-fs2x"></i></div>
+                </aside>
+                <section>
+                    <div class="title">
+                        <div class="cart flex-centerGuardaRoupa"><i class="fal fa-shopping-cart"></i></div>
+                        <div class="cart-info">
+                            <span>Bem vindo,</span>
+                            <small>seu carrinho: <span id="precoTotalGuardaRoupa">R$ 0,00</span></small>
+                        </div>
+                        <div class="search">
+                            <small>pesquisar</small>
+                            <input placeholder="numero" id="searchGuardaRoupa" onkeyup="searchGuardaRoupa()">
+                        </div>
+                    </div>
+                    <div class="shop-content">
+                        <div class="listagemGuardaRoupa"></div>
+                    </div>
+
+                    <div class="shop-color">
+                        <div class="color-iconGuardaRoupa flex-centerGuardaRoupa"><i class="fal fa-palette"></i></div>
+                        <div class="color-contentGuardaRoupa" style="opacity: 0;">
+                            <div class="listaCorGuardaRoupa">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shop-footer">
+                        <div class="input-footer">
+                            <label>rotação do personagem</label><br>
+                            <input class="rangeGuardaRoupa" type="range" id="rotacaoGuardaRoupa" oninput="guardaRangeChange('shopRotacionar',this.value)" value="0" min="0" max="360">
+                        </div>
+                        <div class="action-buyGuardaRoupa" onClick="paymentGuardaRoupa()">
+                            <div class="info-footer styleAugGuardaRoupa flex-centerGuardaRoupa" data-augmented-ui="r-scoop">finalizar</div>
+                            <button class="flex-centerGuardaRoupa"><i class="fal fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <camGuardaRoupa>
+            <div class="item icon">
+                <i class="fal fa-camcorder"></i>
+            </div>
+            <div class="item" onClick="guardaChangeCam('all')">
+                <i class="icon-corpo"></i>
+            </div>
+            <div class="item" onClick="guardaChangeCam('head')">
+                <i class="icon-rosto"></i>
+            </div>
+            <div class="item" onClick="guardaChangeCam('torso')">
+                <i class="icon-torso"></i>
+            </div>
+            <div class="item" onClick="guardaChangeCam('shoes')">
+                <i class="icon-perna"></i>
+            </div>
+            <div class="item" onClick="guardaChangeCam('foot')">
+                <i class="icon-pes"></i>
+            </div>
+        </camGuardaRoupa>
+    </body>
+</moduleWardrobe>
+
+<script src="../modules/nyo_wardrobe/web/script.js"></script>
+
+<script>
+    $('#rotacaoGuardaRoupa').on('input', function (e) {
+        var min = e.target.min,
+            max = e.target.max,
+            val = e.target.value;
+
+        $(e.target).css({
+            'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
+        });
+    }); // .trigger('input')
+
+
+    var colorGuardaRoupa = true
+    $('.color-iconGuardaRoupa').on('click', function () {
+        if (colorGuardaRoupa) {
+            colorGuardaRoupa = false
+            $('.color-contentGuardaRoupa').addClass('animarColorGuardaRoupa');
+            $('.color-contentGuardaRoupa').removeClass('animarColorCloseGuardaRoupa');
+        } else {
+            colorGuardaRoupa = true
+            $('.color-contentGuardaRoupa').removeClass('animarColorGuardaRoupa');
+            $('.color-contentGuardaRoupa').addClass('animarColorCloseGuardaRoupa');
+        }
+    });
+
+    let camGuardaRoupa = true
+    $('camGuardaRoupa .icon').on('click', function () {
+        if (camGuardaRoupa) {
+            camGuardaRoupa = false
+            $('camGuardaRoupa .item:nth-child(2)').animate({
+                opacity: 1
+            }, 200);
+            $('camGuardaRoupa .item:nth-child(3)').animate({
+                opacity: 1
+            }, 500);
+            $('camGuardaRoupa .item:nth-child(4)').animate({
+                opacity: 1
+            }, 800);
+            $('camGuardaRoupa .item:nth-child(5)').animate({
+                opacity: 1
+            }, 1100);
+            $('camGuardaRoupa .item:nth-child(6)').animate({
+                opacity: 1
+            }, 1400);
+        } else {
+            camGuardaRoupa = true
+            $('camGuardaRoupa .item:nth-child(6)').animate({
+                opacity: 0
+            }, 200);
+            $('camGuardaRoupa .item:nth-child(5)').animate({
+                opacity: 0
+            }, 500);
+            $('camGuardaRoupa .item:nth-child(4)').animate({
+                opacity: 0
+            }, 800);
+            $('camGuardaRoupa .item:nth-child(3)').animate({
+                opacity: 0
+            }, 1100);
+            $('camGuardaRoupa .item:nth-child(2)').animate({
+                opacity: 0
+            }, 1400);
+        }
+    });
+</script>
+
+</html>

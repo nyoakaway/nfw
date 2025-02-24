@@ -1,0 +1,10 @@
+{
+    "ui-title": "Clothing Store",
+    "ui-header-title": "Welcome,",
+    "ui-header-cart": "your cart: ",
+    "ui-currency-symbol": "$",
+    "ui-search-field": "search",
+    "ui-search-input-placeholder": "number",
+    "ui-footer-label": "character rotation",
+    "ui-finalize-button": "finalize"
+}

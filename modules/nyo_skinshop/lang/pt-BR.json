@@ -1,0 +1,13 @@
+{
+    "ui-title": "Lojinha de Roupas",
+    "ui-header-title": "Bem vindo,",
+    "ui-header-cart": "seu carrinho: ",
+    "ui-currency-symbol": "R$",
+    "ui-search-field": "pesquisar",
+    "ui-search-input-placeholder": "número",
+    "ui-footer-label": "rotação do personagem",
+    "ui-finalize-button": "finalizar",
+    "ui-success": "Sucesso",
+    "ui-buy-success": "Compra Efetuada",
+    "ui-buy-money-error": "Dinheiro insuficiente"
+}

@@ -1,0 +1,47 @@
+#nui-nyo_routes > html, #nui-nyo_routes > body, #nui-nyo_routes > div, #nui-nyo_routes > span, #nui-nyo_routes > applet, #nui-nyo_routes > object, #nui-nyo_routes > iframe,
+#nui-nyo_routes > h1, #nui-nyo_routes > h2, #nui-nyo_routes > h3, #nui-nyo_routes > h4, #nui-nyo_routes > h5, #nui-nyo_routes > h6, #nui-nyo_routes > p, #nui-nyo_routes > blockquote, #nui-nyo_routes > pre,
+#nui-nyo_routes > a, #nui-nyo_routes > abbr, #nui-nyo_routes > acronym, #nui-nyo_routes > address, #nui-nyo_routes > big, #nui-nyo_routes > cite, #nui-nyo_routes > code,
+#nui-nyo_routes > del, #nui-nyo_routes > dfn, #nui-nyo_routes > em, #nui-nyo_routes > img, #nui-nyo_routes > ins, #nui-nyo_routes > kbd, #nui-nyo_routes > q, #nui-nyo_routes > s, #nui-nyo_routes > samp,
+#nui-nyo_routes > small, #nui-nyo_routes > strike, #nui-nyo_routes > strong, #nui-nyo_routes > sub, #nui-nyo_routes > sup, #nui-nyo_routes > tt, #nui-nyo_routes > var,
+#nui-nyo_routes > b, #nui-nyo_routes > u, #nui-nyo_routes > i, #nui-nyo_routes > center,
+#nui-nyo_routes > dl, #nui-nyo_routes > dt, #nui-nyo_routes > dd, #nui-nyo_routes > ol, #nui-nyo_routes > ul, #nui-nyo_routes > li,
+#nui-nyo_routes > fieldset, #nui-nyo_routes > form, #nui-nyo_routes > label, #nui-nyo_routes > legend,
+#nui-nyo_routes > table, #nui-nyo_routes > caption, #nui-nyo_routes > tbody, #nui-nyo_routes > tfoot, #nui-nyo_routes > thead, #nui-nyo_routes > tr, #nui-nyo_routes > th, #nui-nyo_routes > td,
+#nui-nyo_routes > article, #nui-nyo_routes > aside, #nui-nyo_routes > canvas, #nui-nyo_routes > details, #nui-nyo_routes > embed, 
+#nui-nyo_routes > figure, #nui-nyo_routes > figcaption, #nui-nyo_routes > footer, #nui-nyo_routes > header, #nui-nyo_routes > hgroup, 
+#nui-nyo_routes > menu, #nui-nyo_routes > nav, #nui-nyo_routes > output, #nui-nyo_routes > ruby, #nui-nyo_routes > section, #nui-nyo_routes > summary,
+#nui-nyo_routes > time, #nui-nyo_routes > mark, #nui-nyo_routes > audio, #nui-nyo_routes > video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+#nui-nyo_routes > article, #nui-nyo_routes > aside, #nui-nyo_routes > details, #nui-nyo_routes > figcaption, #nui-nyo_routes > figure, 
+#nui-nyo_routes > footer, #nui-nyo_routes > header, #nui-nyo_routes > hgroup, #nui-nyo_routes > menu, #nui-nyo_routes > nav, #nui-nyo_routes > section {
+	display: block;
+}
+#nui-nyo_routes > body {
+	line-height: 1;
+}
+#nui-nyo_routes > ol, #nui-nyo_routes > ul {
+	list-style: none;
+}
+#nui-nyo_routes > blockquote, q {
+	quotes: none;
+}
+#nui-nyo_routes > blockquote:before,#nui-nyo_routes >  blockquote:after,
+#nui-nyo_routes > q:before, q:after {
+	content: '';
+	content: none;
+}
+#nui-nyo_routes > table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#nui-nyo_routes button, #nui-nyo_routes input {
+    outline:none;
+    border:none;
+}

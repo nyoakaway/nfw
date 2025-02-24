@@ -1,0 +1,13 @@
+{
+    "onRouteStart": "You have started the route!",
+    "onRouteStop": "You have finished the route!",
+    "insufficientItems": "Insufficient Items!",
+    "insufficientSpaceInInventory": "You don't have room in your backpack!",
+    "onSuccessToCollectItem": "You received $amount x from $name",
+    "ui-title": "Available routes",
+    "ui-search-field": "Search",
+    "ui-start-button": "Start",
+    "ui-stop-button": "Finish",
+    "ui-subtitle-1": "Resulting features",
+    "ui-subtitle-2": "Required Resources"
+}

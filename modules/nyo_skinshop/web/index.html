@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <!--link rel="stylesheet" type="text/css" href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css"-->
+        <link rel="stylesheet" href="../modules/nyo_skinshop/web/style.css">
+        <link rel="stylesheet" href="../modules/nyo_skinshop/web/128157c685864bcae8bac195f57075f2ba08f9ac.css">
+    </head>
+    <body>
+        <moduleSkinShop>
+            <div id="mainSkinShop">
+                <header lang="ui-title"></header>
+                <div class="flexSkinShop">
+                    <aside>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="mascara" data-idmenu ="E" data-titulo="Mascara"><i class="icon-mascara icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="bone" data-idmenu ="E" data-titulo="Chapeu"><i class="icon-chapeu icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="camisa" data-idmenu ="E" data-titulo="Camisa"><i class="icon-camisa icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="jaqueta" data-idmenu ="E" data-titulo="Jaqueta"><i class="icon-jaqueta icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="calca" data-idmenu ="E" data-titulo="Calça"><i class="icon-calca icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="sapato" data-idmenu ="E" data-titulo="Sapato"><i class="icon-sapato icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="mochila" data-idmenu ="E" data-titulo="Mochila"><i class="icon-mochila icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="oculos" data-idmenu ="E" data-titulo="Oculos"><i class="icon-oculos icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="brinco" data-idmenu ="E" data-titulo="Brinco"><i class="icon-brincos icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="relogio" data-idmenu ="E" data-titulo="Relogio"><i class="icon-relogio icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="gravata" data-idmenu ="E" data-titulo="Gravata/Acessorio"><i class="icon-gravata icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="colete" data-idmenu ="E" data-titulo="Colete"><i class="icon-colete icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="mao" data-idmenu ="E" data-titulo="Maos"><i class="icon-maos icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="bracelete" data-idmenu ="E" data-titulo="Pulseira"><i class="icon-pulseira icon-fs2x"></i></div>
+                        <div class="categorySkinShop flex-centerSkinShop" onclick="selectShopPart(this)" data-idpart="decals" data-idmenu ="E" data-titulo="Adesivos"><i class="fab fa-hive fa-2x"></i></div>
+                    </aside>
+                    <section>
+                        <div class="title">
+                            <div class="cart flex-centerSkinShop"><i class="fal fa-shopping-cart"></i></div>
+                            <div class="cart-info">
+                                <span lang="ui-header-title"></span>
+                                <small><span lang="ui-header-cart"></span><span id="precoTotalSkinShop">R$ 500,00</span></small>
+                            </div>
+                            <div class="search">
+                                <small lang="ui-search-field"></small>
+                                <input lang="ui-search-input-placeholder" id="searchSkinShop" onkeyup="searchSkinShop()">
+                            </div>
+                        </div>
+                        <div class="shop-content">
+                            <div class="listagemSkinShop">
+               
+
+                            </div>                            
+                        </div>
+                   
+                        <div class="shop-color">
+                            <div class="color-iconSkinShop flex-centerSkinShop"><i class="fal fa-palette"></i></div>
+                            <div class="color-contentSkinShop" style="opacity: 0;">
+                                <div class="listaCorSkinShop">
+
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="shop-footer">
+                            <div class="input-footer">
+                                <label lang="ui-footer-label"></label><br>
+                                <input class="rangeSkinShop" type="range" id="rotacaoSkinShop" oninput="onRangeChange('shopRotacionar',this.value)" value="0" min="0" max="360">
+                            </div>
+                            <div class="action-buySkinShop" onClick="paymentSkinShop()">
+                                <div class="info-footer styleAugSkinShop flex-centerSkinShop" data-augmented-ui="r-scoop" lang="ui-finalize-button"></div>
+                                <button class="flex-centerSkinShop"><i class="fal fa-shopping-bag"></i></button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+    
+            <camSkinShop>
+                <div class="item icon">
+                    <i class="fal fa-camcorder"></i>
+                </div>
+                <div class="item" onClick="shopChangeCam('all')">
+                    <i class="icon-corpo"></i>
+                </div>
+                <div class="item" onClick="shopChangeCam('head')">
+                    <i class="icon-rosto"></i>
+                </div>
+                <div class="item" onClick="shopChangeCam('torso')">
+                    <i class="icon-torso"></i>
+                </div>
+                <div class="item" onClick="shopChangeCam('shoes')">
+                    <i class="icon-perna"></i>
+                </div>
+                <div class="item" onClick="shopChangeCam('foot')">
+                    <i class="icon-pes"></i>
+                </div>
+            </camSkinShop>
+        </moduleSkinShop>
+        
+
+    </body>
+    
+    <script src="../modules/nyo_skinshop/web/script.js"></script>
+
+    <script>
+        $('#rotacaoSkinShop').on('input', function(e){
+        var min = e.target.min,
+            max = e.target.max,
+            val = e.target.value;
+        
+        $(e.target).css({
+            'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'});
+        }); // .trigger('input')
+
+
+        var colorSkinShop = true
+        $('.color-iconSkinShop').on('click', function() {
+            if (colorSkinShop) {
+                colorSkinShop = false
+                $('.color-contentSkinShop').addClass('animarColorSkinShop');
+                $('.color-contentSkinShop').removeClass('animarColorCloseSkinShop');
+            } else {
+                colorSkinShop = true
+                $('.color-contentSkinShop').removeClass('animarColorSkinShop');
+                $('.color-contentSkinShop').addClass('animarColorCloseSkinShop');
+            }
+        });
+
+        let camSkinShop = true
+        $('camSkinShop .icon').on('click', function() {
+            if (camSkinShop) {
+                camSkinShop = false
+                $('camSkinShop .item:nth-child(2)').animate({opacity: 1}, 200);
+                $('camSkinShop .item:nth-child(3)').animate({opacity: 1}, 500);
+                $('camSkinShop .item:nth-child(4)').animate({opacity: 1}, 800);
+                $('camSkinShop .item:nth-child(5)').animate({opacity: 1}, 1100);
+                $('camSkinShop .item:nth-child(6)').animate({opacity: 1}, 1400);
+            } else {
+                camSkinShop = true
+                $('camSkinShop .item:nth-child(6)').animate({opacity: 0}, 200);
+                $('camSkinShop .item:nth-child(5)').animate({opacity: 0}, 500);
+                $('camSkinShop .item:nth-child(4)').animate({opacity: 0}, 800);
+                $('camSkinShop .item:nth-child(3)').animate({opacity: 0}, 1100);
+                $('camSkinShop .item:nth-child(2)').animate({opacity: 0}, 1400);
+            }
+        });
+    </script>
+</html>

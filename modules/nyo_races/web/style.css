@@ -1,0 +1,167 @@
+raceStatus {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+raceStatus h1 {
+  color: #fff;
+  font-size: 70px;
+  font-style: italic;
+}
+
+raceStatus h1 b {
+  opacity: .5;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+raceStatus h1 span {
+  position: relative;
+  left: -5px;
+  top: -4px;
+  font-size: 25px;
+}
+
+raceStatus .timing-race {
+  display: flex;
+  padding: 5px !important;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.timing-race .column {
+  display: flex;
+  height: 100%;
+  font-size: 12px;
+  justify-content: center;
+  margin-right: 10px !important;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.timing-race .column span {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.timing-race .column small {
+  opacity: .5;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.timing-race .column:first-child {
+  padding: 5px 20px 5px 10px !important;
+  background: #0075DE;
+  border-radius: 2px 0px 0px 2px;
+}
+
+.timing-race .column:last-child {
+  padding: 5px 10px 5px 10px;
+}
+
+.race-steps {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  letter-spacing: 2px;
+}
+
+finishRace {
+  position: absolute;
+  top: 50%;
+  right: 120px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  transform: translate(0,-50%);
+}
+
+finishRace .title {
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  padding: 15px 20px !important;
+  margin-bottom: 20px !important;
+  text-transform: uppercase;
+  background-color: #0075DE;
+}
+
+finishRace small {
+  opacity: .5;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 5px !important;
+}
+
+finishRace span {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px !important;
+}
+
+finishRace .racers {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+finishRace .racers .item {
+  width: 300px;
+  height: 55px;
+  display: flex;
+  font-size: 12px;
+  margin-top: 10px !important;
+  padding: 5px 20px !important;
+  font-weight: 600;
+  border-radius: 5px;
+  align-items: center;
+  letter-spacing: 1px;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+finishRace .racers .item span {
+    font-size: 12px;
+}
+
+finishRace .racers .center {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(270deg, rgba(0, 117, 222, 0) 0%, rgba(0, 117, 222, 0.14) 48.44%, rgba(0, 117, 222, 0) 100%);
+}
+
+finishRace .racers .center svg {
+  margin-bottom: 5px;
+}
+
+finishRace b {
+  color: #0075DE;
+}
+
+finishRace p {
+  font-size: 12px;
+  margin-top: 15px !important;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+finishRace p span {
+    font-size: 12px;
+}
